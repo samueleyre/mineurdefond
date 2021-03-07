@@ -139,6 +139,17 @@
     animation: fadeOut ease 1s;
     animation-fill-mode: forwards;
   }
+
+  .roche_caillans {
+    background-image: url('/images/mini_roche_caillans.png');
+  }
+  .roche_minus {
+    background-image: url('/images/mini_roche_minus.png');
+  }
+  .roche_brutus {
+    background-image: url('/images/mini_roche_brutus.png');
+  }
+
 }
 
 @keyframes fadeIn {
@@ -153,6 +164,46 @@
   100% {opacity:0;}
 }
 
+
+/* EXPLORATION ROCK */
+
+.roche {
+  z-index: 10;
+  position: relative;
+  margin: auto;
+  transition: filter 0.5s;
+  filter: brightness(0);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.roche .text {
+  opacity: 0;
+  width: 60%;
+  transition: opacity 0.5s;
+  color: #dedede;
+}
+.roche:hover .text {
+  opacity: 1;
+  color: white;
+  transition: opacity 0.5s;
+}
+.roche-img {
+   width: 200px;
+   height: 200px;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   filter: drop-shadow(-3px 9px 7px black);
+   background-position: center;
+}
+
+.roche:hover {
+  transition: filter 0.5s;
+  filter: brightness(1.5);
+  -webkit-filter: brightness(1.5);
+}
 
 
 
@@ -360,6 +411,10 @@
 
 
 /* ------ Exploration Page ------- */
+
+body {
+  background-color: black;
+}
 
 @media(max-width: 1050px) {
     .exploration {

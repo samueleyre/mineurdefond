@@ -1,7 +1,5 @@
 import Parallax from "parallax-js";
-
-const loading = true;
-
+import ExplorationProjectComponent from "./exploration-project.component";
 
 window.addEventListener("load", function(){
 
@@ -49,9 +47,6 @@ function initMouseHallow() {
     const top = window.innerHeight;
     const left = window.innerWidth;
 
-    console.log(top)
-    console.log(left)
-
     const mX = (left / 2);
     const mY = (top / 2);
 
@@ -74,6 +69,9 @@ export default function ExplorationComponent() {
                         <a className="text-2xl" href="/">Accueil</a>
                     </div>
                 </div>
+                <ExplorationProjectComponent title="KLANG" bottom="4" right="-20" depth="1" link="klang" rock="caillans"/>
+                <ExplorationProjectComponent title="KOLM" bottom="-20" right="20" depth="2" link="kolm" rock="minus"/>
+
             </div>
             <svg className="exploration" id="svg" style={{zIndex: 5, position: "absolute", pointerEvents: "none"}}>
                 <radialGradient id="gradient" x2="1" y2="1">

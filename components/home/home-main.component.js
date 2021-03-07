@@ -2,7 +2,7 @@
 
 
 function explore() {
-    window.open('/exploration');
+    window.open('/exploration', "_self");
 }
 
 export default function HomeMainComponent() {
