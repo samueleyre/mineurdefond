@@ -1,0 +1,98 @@
+import Parallax from "parallax-js";
+
+const loading = true;
+
+
+window.addEventListener("load", function(){
+
+    const parent = document.getElementById('exploration');
+
+    new Parallax(parent, {
+        invertX: true,
+        invertY: true,
+        limitX: 26,
+        limitY: 5,
+    });
+
+    initMouseHallow();
+
+});
+
+/**
+ * Special cursor for exploration
+ */
+function mouseMove(e) {
+
+    const x = e.clientX;
+    const y = e.clientY;
+
+    const circle = document.getElementById("circle-mask");
+    const shadowCircle = document.getElementById("circle-shadow");
+
+    const top = document.body.offsetTop;
+    const left = document.body.offsetLeft;
+
+    const mX = (x - left);
+    const mY = (y - top);
+
+    circle.setAttribute("cx", mX.toString())
+    circle.setAttribute("cy", mY.toString())
+    shadowCircle.setAttribute("cx", mX.toString())
+    shadowCircle.setAttribute("cy", mY.toString());
+
+}
+
+function initMouseHallow() {
+    const circle = document.getElementById("circle-mask");
+    const shadowCircle = document.getElementById("circle-shadow");
+
+    const top = window.innerHeight;
+    const left = window.innerWidth;
+
+    console.log(top)
+    console.log(left)
+
+    const mX = (left / 2);
+    const mY = (top / 2);
+
+    circle.setAttribute("cx", mX.toString())
+    circle.setAttribute("cy", mY.toString())
+    shadowCircle.setAttribute("cx", mX.toString())
+    shadowCircle.setAttribute("cy", mY.toString());
+}
+
+
+
+export default function ExplorationComponent() {
+    return (
+        <>
+            <div onMouseMove={mouseMove} className="exploration"  id="exploration" style={{zIndex: 1, position: "absolute", cursor: "none"}}
+                 data-pointer-events="true">
+                <div className="layer fonds" data-depth="0"
+                     style={{backgroundImage: "url(/images/exploration_bg.jpeg)"}}>
+                    <div className="font-amatic returnLink">
+                        <a className="text-2xl" href="/">Accueil</a>
+                    </div>
+                </div>
+            </div>
+            <svg className="exploration" id="svg" style={{zIndex: 5, position: "absolute", pointerEvents: "none"}}>
+                <radialGradient id="gradient" x2="1" y2="1">
+                    <stop offset="0%" stopColor="transparent"/>
+                    <stop offset="60%" stopColor="transparent"/>
+                    <stop offset="95%" stopColor="black"/>
+                    <stop offset="100%" stopColor="black"/>
+                </radialGradient>
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%">
+                        <rect x="0" y="0" width="100%" height="100%" fill="#fff"/>
+                        <circle id="circle-mask" r="300"/>
+                    </mask>
+                </defs>
+                <rect width="100%" height="100%" mask="url(#mask)"/>
+                <circle id="circle-shadow" cx="831" cy="16" r="300"
+                        style={{fill: "url(#gradient) transparent", strokeWidth: "68px", stroke: "black"}}/>
+            </svg>
+            <div className="absolute z-40 bg-black h-full w-full fade-out pointer-events-none"/>
+        </>
+    )
+}
