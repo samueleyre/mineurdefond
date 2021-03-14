@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {useRouter} from "next/router";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons/faAngleRight";
 import {faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 
@@ -29,110 +29,184 @@ function toggleSubMenu() {
     document.getElementById('nav-menu-sub-items').classList.toggle('nav-menu-sub-items--open')
 }
 
-export default function NavComponent({ mode }) {
+export default function NavComponent({mode}) {
 
     const router = useRouter();
 
     const navs = [
         {
-            name : "Accueil",
-            link : '/'
+            name: "Accueil",
+            link: '/'
         },
         {
-            name : "Contact",
-            link : '/contact'
+            name: "Contact",
+            link: '/contact'
         },
     ].filter((nav => nav.link !== router.pathname));
 
     const projects_nav = [
         {
-            name : "KLANG",
-            link : '/klang'
+            name: "KLANG",
+            link: '/klang'
         },
         {
-            name : "KOLM",
-            link : '/kolm'
+            name: "KOLM",
+            link: '/kolm'
         },
         {
-            name : "Madam RamDam",
-            link : '/madamramdam'
+            name: "Madam RamDam",
+            link: '/madamramdam'
         },
         {
-            name : "Tchoukadane",
-            link : '/tchoukadane'
+            name: "Tchoukadane",
+            link: '/tchoukadane'
         },
         {
-            name : "Terra Mare",
-            link : '/terramare'
+            name: "Terra Mare",
+            link: '/terramare'
         },
         {
-            name : "Thibault Gomez Quintet",
-            link : '/thibaultgomezquintet'
+            name: "Thibault Gomez Quintet",
+            link: '/thibaultgomezquintet'
         },
     ].filter((nav => nav.link !== router.pathname));
 
-    return <div className={mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} >
-        <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
-            <svg
-                width="36.011681mm"
-                height="14.363094mm"
-                viewBox="0 0 36.011681 14.363094"
-            >
-                <g
-                    transform="translate(-58.021206,-120.43598)">
+    const mobile = window.innerWidth < 768;
+
+    return <>
+        {!mobile ? (
+        <div
+            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} mt-4 pl-4 desktop mobileToTabloid:flex`}>
+            <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
+                <svg
+                    width="36.011681mm"
+                    height="14.363094mm"
+                    viewBox="0 0 36.011681 14.363094"
+                >
                     <g
-                        transform="translate(45.595238,-139.33334)">
-                        <circle
-                            r="7.1815472"
-                            cy="266.95087"
-                            cx="30.238091"
-                            id="path14"
+                        transform="translate(-58.021206,-120.43598)">
+                        <g
+                            transform="translate(45.595238,-139.33334)">
+                            <circle
+                                r="7.1815472"
+                                cy="266.95087"
+                                cx="30.238091"
+                                id="path14"
                             />
-                        <circle
-                            r="2.6930804"
-                            cy="267.09262"
-                            cx="45.744568"
-                            id="path14-3"
+                            <circle
+                                r="2.6930804"
+                                cy="267.09262"
+                                cx="45.744568"
+                                id="path14-3"
                             />
-                        <circle
-                            r="2.6930804"
-                            cy="266.9509"
-                            cx="15.119048"
-                            id="path14-3-7"
+                            <circle
+                                r="2.6930804"
+                                cy="266.9509"
+                                cx="15.119048"
+                                id="path14-3-7"
                             />
+                        </g>
                     </g>
-                </g>
-            </svg>
+                </svg>
 
-        </div>
-        <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper">
-            <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
+            </div>
 
-                {navs.map((nav, index) => {
-                    return <div key={index} className="nav-menu-item">
-                        <Link href={nav.link}>{nav.name}</Link>
+            <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper">
+                <div id="nav-menu-main-items"
+                     className="nav-menu-main-items nav-menu-main-items--open nav-menu-items absolute mobileToTabloid:mb-2 mobileToTabloid:flex-row mobileToTabloid:overflow-x-auto">
+
+                    {navs.map((nav, index) => {
+                        return <div key={index} className="nav-menu-item">
+                            <Link href={nav.link}>{nav.name}</Link>
+                        </div>
+                    })}
+                    <div className="nav-menu-item">
+                        <a href="#" onClick={toggleSubMenu}>
+                            <span className="pr-1">Projets</span>
+                            <FontAwesomeIcon className="nav-menu-item-projets w-3" icon={faAngleRight}/>
+                        </a>
                     </div>
-                })}
-                <div className="nav-menu-item">
-                    <a href="#" onClick={toggleSubMenu}>
-                        <span className="pr-1">Projets</span>
-                        <FontAwesomeIcon className="w-3" icon={faAngleRight} />
-                    </a>
+                </div>
+                <div id="nav-menu-sub-items"
+                     className="nav-menu-sub-items nav-menu-items mobileToTabloid:mb-2 absolute mobileToTabloid:flex-row mobileToTabloid:overflow-x-auto">
+                    {projects_nav.map((nav, index) => {
+                        return <div key={index} className="nav-menu-item">
+                            <Link href={nav.link}>{nav.name}</Link>
+                        </div>
+                    })}
+                    <div className="nav-menu-item">
+                        <a href="#" onClick={toggleSubMenu}>
+                            <FontAwesomeIcon className="nav-menu-item-retour w-3" icon={faAngleLeft}/>
+                            <span className="pl-1">Retour</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div id="nav-menu-sub-items" className="nav-menu-sub-items nav-menu-items">
-                {projects_nav.map((nav, index) => {
-                    return <div key={index} className="nav-menu-item">
-                        <Link href={nav.link}>{nav.name}</Link>
+        </div>) : (
+        <div
+            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} w-full h-full mobile`}>
+            <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-full justify-center items-center">
+                <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
+
+                    {navs.map((nav, index) => {
+                        return <div key={index} className="nav-menu-item">
+                            <Link href={nav.link}>{nav.name}</Link>
+                        </div>
+                    })}
+                    <div className="nav-menu-item ">
+                        <a href="#" onClick={toggleSubMenu}>
+                            <span className="pr-1">Projets</span>
+                            <FontAwesomeIcon className="w-3" icon={faAngleRight}/>
+                        </a>
                     </div>
-                })}
-                <div className="nav-menu-item">
-                    <a href="#" onClick={toggleSubMenu}>
-                        <FontAwesomeIcon className="w-3" icon={faAngleLeft} />
-                        <span className="pl-1">Retour</span>
-                    </a>
+                </div>
+                <div id="nav-menu-sub-items" className="nav-menu-sub-items nav-menu-items">
+                    {projects_nav.map((nav, index) => {
+                        return <div key={index} className="nav-menu-item">
+                            <Link href={nav.link}>{nav.name}</Link>
+                        </div>
+                    })}
+                    <div className="nav-menu-item nav-menu-item--return">
+                        <a href="#" onClick={toggleSubMenu}>
+                            <FontAwesomeIcon className="w-3" icon={faAngleLeft}/>
+                            <span className="pl-1">Retour</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon mt-4 ml-4 z-20 absolute">
+                <svg
+                    width="36.011681mm"
+                    height="14.363094mm"
+                    viewBox="0 0 36.011681 14.363094"
+                >
+                    <g
+                        transform="translate(-58.021206,-120.43598)">
+                        <g
+                            transform="translate(45.595238,-139.33334)">
+                            <circle
+                                r="7.1815472"
+                                cy="266.95087"
+                                cx="30.238091"
+                                id="path14"
+                            />
+                            <circle
+                                r="2.6930804"
+                                cy="267.09262"
+                                cx="45.744568"
+                                id="path14-3"
+                            />
+                            <circle
+                                r="2.6930804"
+                                cy="266.9509"
+                                cx="15.119048"
+                                id="path14-3-7"
+                            />
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+        </div>)}
+    </>
 }

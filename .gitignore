@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#jet-beans
+.idea
+
+#sass
+*/**/.sass-cache
