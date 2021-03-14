@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       screens: {
         'mobileToTabloid': {'max': '1023px'},
+        'mobile': {'max': '768px'},
       },
       colors: {
         'accent-1': '#FAFAFA',

@@ -10,7 +10,7 @@ function Index() {
                 <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
             </Head>
-            <div className="bg-no-repeat w-full bg-cover " style={{backgroundImage: "url(/images/home-bg.png)"}}>
+            <div className="bg-no-repeat w-full bg-cover " style={{backgroundImage: "url(/images/home_bg.png)"}}>
                 <HomeHeaderComponent/>
                 <HomeMainComponent/>
             </div>

@@ -29,7 +29,11 @@ function toggleSubMenu() {
     document.getElementById('nav-menu-sub-items').classList.toggle('nav-menu-sub-items--open')
 }
 
-export default function NavComponent({mode}) {
+export default function NavComponent({mode, position}) {
+
+    if (!position) {
+        position = "absolute";
+    }
 
     const router = useRouter();
 
@@ -76,7 +80,7 @@ export default function NavComponent({mode}) {
     return <>
         {!mobile ? (
         <div
-            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} mt-4 pl-4 desktop mobileToTabloid:flex`}>
+            className={`${position} ${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} mt-4 pl-4 desktop mobileToTabloid:flex`}>
             <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
                 <svg
                     width="36.011681mm"
@@ -144,8 +148,8 @@ export default function NavComponent({mode}) {
             </div>
         </div>) : (
         <div
-            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} w-full h-full mobile`}>
-            <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-full justify-center items-center">
+            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} absolute w-full h-full mobile`}>
+            <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-screen justify-center items-center">
                 <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
 
                     {navs.map((nav, index) => {
@@ -154,7 +158,7 @@ export default function NavComponent({mode}) {
                         </div>
                     })}
                     <div className="nav-menu-item ">
-                        <a href="#" onClick={toggleSubMenu}>
+                        <a className="flex items-center" href="#" onClick={toggleSubMenu}>
                             <span className="pr-1">Projets</span>
                             <FontAwesomeIcon className="w-3" icon={faAngleRight}/>
                         </a>
@@ -167,7 +171,7 @@ export default function NavComponent({mode}) {
                         </div>
                     })}
                     <div className="nav-menu-item nav-menu-item--return">
-                        <a href="#" onClick={toggleSubMenu}>
+                        <a className="flex items-center" href="#" onClick={toggleSubMenu}>
                             <FontAwesomeIcon className="w-3" icon={faAngleLeft}/>
                             <span className="pl-1">Retour</span>
                         </a>
