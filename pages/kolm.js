@@ -1,4 +1,5 @@
-import NavComponent from "../components/main/nav.component";
+import dynamic from "next/dynamic";
+const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 function Contact() {
     return <>
