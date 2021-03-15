@@ -53,18 +53,6 @@
     animation-fill-mode: forwards;
   }
 
-  .roche_caillans {
-    background-image: url('/images/mini_roche_caillans.png');
-  }
-
-  .roche_minus {
-    background-image: url('/images/mini_roche_minus.png');
-  }
-
-  .roche_brutus {
-    background-image: url('/images/mini_roche_brutus.png');
-  }
-
 }
 
 @media (min-width: 768px) {
@@ -172,13 +160,13 @@
 
 .homepage-explore > svg .light-beam {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: fill 0.3s;
 }
 
 .homepage-explore > svg:hover .light-beam {
-  fill: #dfbb13 !important;
+  fill: #e54c21 !important;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: fill 0.3s;
 }
 
 .homepage-explore > svg, .homepage-explore > span {
