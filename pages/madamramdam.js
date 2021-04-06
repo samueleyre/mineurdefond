@@ -10,6 +10,7 @@ function Madamramdam() {
             <title>Mineurs de fond | Madam Ramdam</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
         </Head>
         <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent
@@ -20,7 +21,7 @@ function Madamramdam() {
                 Quartet de musiques-à-danser formé par des amis musiciens sur les pas d’une Valse à la Jacques, d’un Rock à Eddie ou d’une Milonga Portuaire, dans l’envie de perpétuer et partager une danse, celle des fêtes populaires, en revisitant les rythmes et les mots qui ont marqués les âges, d’içi, de là-bas, de nos Aïeux à nos Contemporains.
             </p>
             <p className="pt-10 text-center font-bold">
-                Venez trainer une semelle et prêter une oreille à MaDam RamDam!
+                Venez trainer une semelle et prêter une oreille à MaDam RamDam !
             </p>
             <figure
                 className="flex justify-center mt-10">

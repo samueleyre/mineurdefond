@@ -9,6 +9,7 @@ function Index() {
                 <title>Mineurs de fond</title>
                 <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
             </Head>
             <div className="bg-no-repeat w-full bg-cover " style={{backgroundImage: "url(/images/home_bg.png)"}}>
                 <HomeHeaderComponent/>

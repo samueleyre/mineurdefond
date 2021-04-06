@@ -7,9 +7,9 @@ export default function ExplorationProjectComponent({ title, depth, rock, link, 
     return (
         <div className={`layer roche`} style={{ bottom: `${bottom}%`, right: `${right * -1}%` }}
              data-depth={ depth }>
-            <a className="no-underline font-amatic text-3xl" href={ link }>
+            <a className="no-underline text-3xl" href={ link }>
                 <div className={`roche-img ${style['roche_'+rock]}`}>
-                    <span className="text leading-8">{title}</span>
+                    <span className="font-amatic text leading-8">{title}</span>
                 </div>
             </a>
         </div>

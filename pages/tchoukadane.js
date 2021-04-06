@@ -10,6 +10,7 @@ function Kolm() {
             <title>Mineurs de fond | Tchoukadane</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
         </Head>
         <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent title="Tchoukadane" description="Tandem chansonnier"/>

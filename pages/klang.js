@@ -10,6 +10,7 @@ function Klang() {
             <title>Mineurs de fond | Klang</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
         </Head>
         <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent title="Klang" description="Née de l’impact entre arts visuels et sonores, KLANG est efficace comme une onomatopée et frappante comme sa sonorité"/>
