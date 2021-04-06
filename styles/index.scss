@@ -229,7 +229,8 @@ body {
 }
 
 #exploration .returnLink:hover {
-  background-color: #000000b5;
+  //background-color: #000000b5;
+  text-shadow: #000 2px 2px 1px;
   transition: 0.3s ease;
 }
 

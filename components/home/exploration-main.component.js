@@ -66,11 +66,15 @@ export default function ExplorationComponent() {
                 <div className="layer fonds" data-depth="0"
                      style={{backgroundImage: "url(/images/exploration_bg.jpeg)"}}>
                     <div className="font-amatic returnLink">
-                        <a className="text-2xl" href="/">Accueil</a>
+                        <a className="text-4xl" href="/">Accueil</a>
                     </div>
                 </div>
                 <ExplorationProjectComponent title="KLANG" bottom="4" right="-20" depth="1" link="klang" rock="caillans"/>
-                <ExplorationProjectComponent title="KOLM" bottom="-20" right="20" depth="2" link="kolm" rock="minus"/>
+                <ExplorationProjectComponent title="KOLM" bottom="-20" right="20" depth="1" link="kolm" rock="minus"/>
+                <ExplorationProjectComponent title="Tchoukadane" bottom="-40" right="-70" depth="3" link="tchoukadane" rock="caillans"/>
+                <ExplorationProjectComponent title="Thibault Gomez Quintet" bottom="30" right="70" depth="3" link="thibaultgomezquintet" rock="minus"/>
+                <ExplorationProjectComponent title="Terra Mare" bottom="-40" right="60" depth="2" link="terramare" rock="minus"/>
+                <ExplorationProjectComponent title="MadamRamDam" bottom="30" right="-60" depth="2" link="madamramdam" rock="minus"/>
 
             </div>
             <svg className="exploration" id="svg" style={{zIndex: 5, position: "absolute", pointerEvents: "none"}}>

@@ -9,7 +9,7 @@ export default function ExplorationProjectComponent({ title, depth, rock, link, 
              data-depth={ depth }>
             <a className="no-underline font-amatic text-3xl" href={ link }>
                 <div className={`roche-img ${style['roche_'+rock]}`}>
-                    <span className="text">{title}</span>
+                    <span className="text leading-8">{title}</span>
                 </div>
             </a>
         </div>
