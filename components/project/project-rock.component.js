@@ -1,14 +1,29 @@
+import dynamic from "next/dynamic";
+import Head from "next/head";
+
+const NavComponent = dynamic(() => import('../main/nav.component'), {ssr: false})
 
 export default function ProjectRockComponent({title, description}) {
     return (
-        <div className="h-screen w-full bg-white">
-            <div className="h-full flex justify-center items-center">
-                <div className="max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col" style={{height: "800px", width: "800px", backgroundImage: "url(/images/projectPage_rock.png)"}}>
-                    <h1 className="font-amatic pr-32 pl-32 pt-5 pb-5 text-center text-8xl text-white">{title}</h1>
-                    <p className="mobile:pr-4 mobile:pr-5 sm:pr-32 sm:pl-32 pt-1 pb-1 text-center text-xl text-white">{description}</p>
+        <>
+            <Head>
+                <title>Mineurs de fond | {title}</title>
+                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+            </Head>
+            <NavComponent mode="dark" sm_mode="light" position="fixed"/>
+            <div className="h-screen w-full bg-white mobile:pb-56">
+                <div className="h-full flex justify-center items-center">
+                    <div
+                        className="max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col"
+                        style={{height: "800px", width: "800px", backgroundImage: "url(/images/projectPage_rock.png)"}}>
+                        <h1 className="font-amatic sm:pr-32 sm:pl-32 pt-5 pb-5 text-center text-7xl text-white">{title}</h1>
+                        <p className="mobile:pl-5 mobile:pr-5 sm:pr-32 sm:pl-32 pt-1 pb-1 text-center text-xl text-white">{description}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

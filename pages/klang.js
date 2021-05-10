@@ -2,17 +2,9 @@ import dynamic from "next/dynamic";
 import ProjectRockComponent from "../components/project/project-rock.component";
 import Head from "next/head";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
-const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 function Klang() {
     return <>
-        <Head>
-            <title>Mineurs de fond | Klang</title>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-        </Head>
-        <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent title="Klang" description="Née de l’impact entre arts visuels et sonores, KLANG est efficace comme une onomatopée et frappante comme sa sonorité"/>
         <ProjectLayoutComponent>
             <p>

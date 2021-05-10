@@ -29,7 +29,7 @@ function toggleSubMenu() {
     document.getElementById('nav-menu-sub-items').classList.toggle('nav-menu-sub-items--open')
 }
 
-export default function NavComponent({mode, position}) {
+export default function NavComponent({mode, sm_mode, position}) {
 
     if (!position) {
         position = "absolute";
@@ -76,11 +76,14 @@ export default function NavComponent({mode, position}) {
     ].filter((nav => nav.link !== router.pathname));
 
     const mobile = window.innerWidth < 768;
-
+    if (!sm_mode) {
+        sm_mode = mode;
+    }
+    
     return <>
         {!mobile ? (
         <div
-            className={`${position} ${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} mt-4 pl-4 desktop mobileToTabloid:flex`}>
+            className={`${position} nav-menu ${mode === "light" ? "nav-menu--light" : "nav-menu--dark"} ${sm_mode === "light" ? "mobile-nav-menu--light" : "mobile-nav-menu--dark" } mt-4 pl-4 desktop mobileToTabloid:flex`}>
             <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
                 <svg
                     width="36.011681mm"
@@ -148,7 +151,7 @@ export default function NavComponent({mode, position}) {
             </div>
         </div>) : (
         <div
-            className={`${mode === "light" ? "nav-menu nav-menu--light" : "nav-menu"} absolute w-full h-full mobile`}>
+            className={`nav-menu ${sm_mode === "light" ? "nav-menu--light" : "mobile-nav-menu--dark"} absolute w-full mobile`}>
             <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-screen justify-center items-center">
                 <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
 

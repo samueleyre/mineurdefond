@@ -1,18 +1,8 @@
-import dynamic from "next/dynamic";
 import ProjectRockComponent from "../components/project/project-rock.component";
-import Head from "next/head";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
-const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 function Kolm() {
     return <>
-        <Head>
-            <title>Mineurs de fond | Terra Mare</title>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-        </Head>
-        <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent title="Terra Mare" description="Paolo Gauthier – Chansons – Guitare-cithare"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">

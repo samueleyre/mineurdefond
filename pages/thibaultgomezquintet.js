@@ -6,13 +6,6 @@ const NavComponent = dynamic(() => import('../components/main/nav.component'), {
 
 function Kolm() {
     return <>
-        <Head>
-            <title>Mineurs de fond | Thibault Gomez Quintet</title>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-        </Head>
-        <NavComponent mode="dark" position="fixed" />
         <ProjectRockComponent title="Thibault Gomez Quintet" description="« RÊVE GÉNÉRAL ! »"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">

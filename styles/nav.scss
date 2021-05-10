@@ -17,6 +17,7 @@
         background-color: black;
         &--open {
           position: fixed !important;
+          height: 100%;
           .nav-menu-item {
             a {
               color: white;
@@ -27,7 +28,7 @@
 
       > .nav-menu-item {
         a {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
 
         &--return {
@@ -91,6 +92,24 @@
     .nav-menu-icon {
       > svg {
         fill: white;
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    .mobile-nav-menu--light {
+      .nav-menu-items {
+        > .nav-menu-item {
+          a {
+            color: white;
+          }
+        }
+      }
+
+      .nav-menu-icon {
+        > svg {
+          fill: white;
+        }
       }
     }
   }
