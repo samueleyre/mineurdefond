@@ -15,6 +15,11 @@ function Exploration() {
                       rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
             </Head>
+            <style jsx global>{`
+            body {
+              overflow: hidden
+            }
+          `}</style>
             <ExplorationComponent/>
         </>
     )
