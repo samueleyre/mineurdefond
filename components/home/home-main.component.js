@@ -89,8 +89,8 @@ export default function HomeMainComponent() {
             <div className="flex h-screen items-end">
                 <img className="" src="images/left_rock.png" alt=""/>
             </div>
-            <div className="homepage-right" style={{ backgroundImage: `url(/images/right_rock.png)`}}>
-            </div>
+            {/*<div className="homepage-right" style={{ backgroundImage: `url(/images/right_rock.png)`}}>*/}
+            {/*</div>*/}
         </section>
     )
 }

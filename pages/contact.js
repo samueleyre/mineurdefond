@@ -9,7 +9,7 @@ import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 
 function Contact() {
     return <>
-        <HeadComponent title="Exploration"/>
+        <HeadComponent title="Contact"/>
         <NavComponent mode="light"/>
         <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 h-screen bg-cover">
             <div className=" mobile:p-2 max-w-screen-lg m-auto">

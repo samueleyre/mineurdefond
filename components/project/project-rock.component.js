@@ -1,17 +1,12 @@
 import dynamic from "next/dynamic";
-import Head from "next/head";
+import HeadComponent from "../main/head.component";
 
 const NavComponent = dynamic(() => import('../main/nav.component'), {ssr: false})
 
 export default function ProjectRockComponent({title, description}) {
     return (
         <>
-            <Head>
-                <title>Mineurs de fond | {title}</title>
-                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-                <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
-                <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-            </Head>
+            <HeadComponent title={title}/>
             <NavComponent mode="dark" sm_mode="light" position="fixed"/>
             <div className="h-screen w-full bg-white mobile:pb-56">
                 <div className="h-full flex justify-center items-center">
