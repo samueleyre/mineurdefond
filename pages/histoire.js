@@ -9,6 +9,11 @@ function Histoire() {
     return <>
         <HeadComponent title="Histoire"/>
         <NavComponent mode="light"/>
+        <div className="h-full w-full max-w-screen absolute overflow-x-hidden">
+            <div id="light" className="lightContainer">
+                <div className="light"></div>
+            </div>
+        </div>
         <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 h-full bg-cover pr-12 pl-12">
             <div className=" mobile:p-2 max-w-screen-lg m-auto">
                 <h1 className="text-6xl text-center white">Histoire</h1>
@@ -123,10 +128,6 @@ function Histoire() {
                 </div>
                 <div className="m-auto max-w-full bg-contain bg-no-repeat bg-center" style={{height: "400px", backgroundImage : "radial-gradient(transparent, rgb(13, 13, 13) 53%), url('images/contact-center.png')"}}></div>
             </div>
-            <div className="lightContainer">
-                <div className="light"></div>
-            </div>
-
         </div>
     </>
 }

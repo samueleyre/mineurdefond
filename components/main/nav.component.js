@@ -12,8 +12,16 @@ function rotate() {
     document.getElementById('nav-menu-icon').classList.toggle('nav-menu-icon--open')
 }
 
+function rotateLight() {
+    const light = document.getElementById('light');
+    if (light) {
+        light.classList.toggle('lightContainer--hidden')
+    }
+}
+
 function activateMenu() {
     rotate();
+    rotateLight();
     if (menuActivated) {
         if (subMenuActivated) {
             toggleSubMenu();
@@ -87,7 +95,7 @@ export default function NavComponent({mode, sm_mode, position}) {
     return <>
         {!mobile ? (
         <div
-            className={`${position} nav-menu ${mode === "light" ? "nav-menu--light" : "nav-menu--dark"} ${sm_mode === "light" ? "mobile-nav-menu--light" : "mobile-nav-menu--dark" } mt-4 pl-4 desktop mobileToTabloid:flex`}>
+            className={`${position} nav-menu ${mode === "light" ? "nav-menu--light" : "nav-menu--dark"} ${sm_mode === "light" ? "mobile-nav-menu--light" : "mobile-nav-menu--dark" } mt-4 pl-4 desktop mobileToTabloid:flex z-50`}>
             <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
                 <svg
                     width="36.011681mm"
@@ -155,7 +163,7 @@ export default function NavComponent({mode, sm_mode, position}) {
             </div>
         </div>) : (
         <div
-            className={`nav-menu ${sm_mode === "light" ? "nav-menu--light" : "mobile-nav-menu--dark"} absolute w-full mobile`}>
+            className={`nav-menu ${sm_mode === "light" ? "nav-menu--light" : "mobile-nav-menu--dark"} absolute w-full mobile z-50`}>
             <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-screen justify-center items-center">
                 <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
 

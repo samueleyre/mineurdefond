@@ -86,11 +86,11 @@ export default function HomeMainComponent() {
 
                 <span className="pl-6 font-amatic">Explorez la mine</span>
             </div>
-            <div className="flex h-screen items-end">
-                <img className="" src="images/left_rock.png" alt=""/>
+            <div className="flex items-end" style={{paddingTop: "calc(100vh - 336px)"}}>
+                <div className="w-full bg-cover" style={{height: "900px", backgroundImage: 'url("images/bottom_rock.png")'}}>
+                    <h4 style={{paddingTop: "11rem"}} className="text-7xl pl-10 text-white">FESTIVAL 2021 !</h4>
+                </div>
             </div>
-            {/*<div className="homepage-right" style={{ backgroundImage: `url(/images/right_rock.png)`}}>*/}
-            {/*</div>*/}
         </section>
     )
 }
