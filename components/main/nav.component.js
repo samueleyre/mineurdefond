@@ -43,6 +43,10 @@ export default function NavComponent({mode, sm_mode, position}) {
             link: '/'
         },
         {
+            name: "Histoire",
+            link: '/histoire'
+        },
+        {
             name: "Contact",
             link: '/contact'
         },
