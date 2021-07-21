@@ -86,9 +86,25 @@ export default function HomeMainComponent() {
 
                 <span className="pl-6 font-amatic">Explorez la mine</span>
             </div>
-            <div className="flex items-end" style={{paddingTop: "calc(100vh - 336px)"}}>
+            <div className="homepage-footer flex items-end">
                 <div className="w-full bg-cover" style={{height: "900px", backgroundImage: 'url("images/bottom_rock.png")'}}>
-                    <h4 style={{paddingTop: "11rem"}} className="text-7xl pl-10 text-white">FESTIVAL 2021 !</h4>
+                    <div style={{paddingTop: "10rem"}} className="text-7xl pl-10 text-white">
+                        <a style={{width: "200px"}} className="flex" href="/festival-des-pentomines">
+                            <img style={{filter: "brightness(1.3)"}} width="200px" src="images/festival_des.png" alt="Festival des pantomines"/>
+                        </a>
+                        <a style={{width: "280px"}} className="flex" href="/festival-des-pentomines">
+                            <img style={{filter: "brightness(1.3)"}} width="280px" src="images/pentomines.png" alt="Festival des pantomines"/>
+                        </a>
+                        <div className="mt-10">
+                            <p className="text-xl">Du 13 au 15 Août 2021 à Villaroger et Sainte-foy en Savoie.</p>
+                            <p className="text-xl pt-4 font-bold">Concerts - Théâtre - Balade</p>
+                            <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pentomines">Voir le programme !</a>
+                        </div>
+                        <div className="mt-20 pb-4 md:pr-40">
+                            <h1 className="text-6xl">Les Mineurs de fond</h1>
+                            <p className="text-xl" style={{maxWidth: "1000px"}}>Le collectif Mineurs de fond colporte un "art mineur," celui fait par les vents et érodé par les diversités, en proposant de se rencontrer lors de ballade rupestre, bal ou veillée et caravane-théâtre où on aurait pas forcément mit les pieds.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

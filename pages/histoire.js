@@ -9,7 +9,7 @@ function Histoire() {
     return <>
         <HeadComponent title="Histoire"/>
         <NavComponent mode="light"/>
-        <div className="h-full w-full max-w-screen absolute overflow-x-hidden">
+        <div style={{height: "2000px"}} className="w-full max-w-screen absolute overflow-hidden">
             <div id="light" className="lightContainer">
                 <div className="light"></div>
             </div>

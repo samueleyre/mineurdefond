@@ -183,6 +183,19 @@ p, span, a, li {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .homepage-footer {
+    padding-top: calc(100vh - 336px);
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage-footer {
+    padding-top: calc(100vh - 560px);
+  }
+}
+
+
 @media (max-width: 1024px) {
   .homepage-explore {
     display: none;
