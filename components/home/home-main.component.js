@@ -89,16 +89,16 @@ export default function HomeMainComponent() {
             <div className="homepage-footer flex items-end">
                 <div className="w-full bg-cover" style={{height: "900px", backgroundImage: 'url("images/bottom_rock.png")'}}>
                     <div style={{paddingTop: "10rem"}} className="text-7xl pl-10 text-white">
-                        <a style={{width: "200px"}} className="flex" href="/festival-des-pentomines">
+                        <a style={{width: "200px"}} className="flex" href="/festival-des-pantomines">
                             <img style={{filter: "brightness(1.3)"}} width="200px" src="images/festival_des.png" alt="Festival des pantomines"/>
                         </a>
-                        <a style={{width: "280px"}} className="flex" href="/festival-des-pentomines">
-                            <img style={{filter: "brightness(1.3)"}} width="280px" src="images/pentomines.png" alt="Festival des pantomines"/>
+                        <a style={{width: "280px"}} className="flex" href="/festival-des-pantomines">
+                            <img style={{filter: "brightness(1.3)"}} width="280px" src="images/pantomines.png" alt="Festival des pantomines"/>
                         </a>
                         <div className="mt-10">
                             <p className="text-xl">Du 13 au 15 Août 2021 à Villaroger et Sainte-foy en Savoie.</p>
                             <p className="text-xl pt-4 font-bold">Concerts - Théâtre - Balade</p>
-                            <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pentomines">Voir le programme !</a>
+                            <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pantomines">Voir le programme !</a>
                         </div>
                         <div className="mt-20 pb-4 md:pr-40">
                             <h1 className="text-6xl">Les Mineurs de fond</h1>

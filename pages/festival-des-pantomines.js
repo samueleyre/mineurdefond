@@ -2,13 +2,13 @@ import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 import FestivalEventComponent from "../components/festival/festival-event.component";
 
-function FestivalDesPentomines() {
+function FestivalDesPantomines() {
     return <>
-        <ProjectRockComponent title="Le festival des Pentomines"
+        <ProjectRockComponent title="Le festival des Pantomines"
                               description="Du 13 au 15 août 2021 à Villaroger et Sainte-Foy en Savoie">
             <div className="m-auto">
                 <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.png" alt="Festival des pantomines"/>
-                <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pentomines.png" alt="Festival des pantomines"/>
+                <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.png" alt="Festival des pantomines"/>
             </div>
 
         </ProjectRockComponent>
@@ -69,4 +69,4 @@ function FestivalDesPentomines() {
     </>
 }
 
-export default FestivalDesPentomines
+export default FestivalDesPantomines
