@@ -13,7 +13,24 @@ function FestivalDesPantomines() {
 
         </ProjectRockComponent>
         <ProjectLayoutComponent>
-            <p className="text-3xl text-center mb-8">Concerts, Théâtre et Balade</p>
+            <p className="text-xl pt-8 mb-8 pl-4 pr-4 bold">
+            Le Festival des Pantomines débarque en Haute-Tarentaise du 13 au 15 août 2021 avec une série de
+            concerts et spectacles détonnants !
+            </p>
+            <p className="text-xl mb-8 pl-4 pr-4">
+            En journée ou à la faveur des lucioles, ce festival vous invite à une plongée dans des paysages
+            exceptionnels autour de rencontres musicales insolites et fortes en émotion.
+            Toujours en pleine nature, chaque rendez-vous sera donné dans un lieu différent des communes
+            de Villaroger et Sainte-Foy. La programmation éclectique vous réserve de nombreuses surprises
+            avec le trio de musiques des Balkans Lesto Drom, une balade matinale menée par un guide
+            et suivie d’un concert du violoniste Fred Aurier, une envolée musicale chantée par le tandem
+            Tchoukadane, le spectacle Touffe de Spleen à l’énergie 100% féminine ou encore les chansons
+            folk de Siri Byrkjedal tout droit venue de Norvège, pour finir avec le grand bal de MaDam
+            RamDam offert sous les étoiles.
+            </p>
+            <p className="text-2xl mb-6 text-center mt-16 italic" style={{color: "grey"}}>
+            Programme
+            </p>
             <p className="p-6 text-4xl">13 AOUT</p>
             <div className="mobile:p-4 sm:p-22 flex flex-wrap justify-center">
 
@@ -64,6 +81,11 @@ function FestivalDesPantomines() {
                 />
 
             </div>
+            <p className="text-center mt-16 mb-8 pl-4 pr-4">
+            Une proposition construite avec les communes de
+            Villaroger et Sainte-Foy et la communauté de commune
+            de Haute-Tarentaise.
+            </p>
 
         </ProjectLayoutComponent>
     </>
