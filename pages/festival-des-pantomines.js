@@ -37,6 +37,8 @@ function FestivalDesPantomines() {
                 <FestivalEventComponent
                     title="LESTO DROM"
                     title_color="#a76a53"
+                    link="https://www.noe-clerc.com/lesto-drom"
+                    newPage="true"
                     place_and_time="Les îles, Villaroger à 18h"
                     musique_style="Musique des Blakans"
                 />
@@ -46,6 +48,8 @@ function FestivalDesPantomines() {
                 <FestivalEventComponent
                     title="FRED AURIER & CO"
                     title_color="#a8834b"
+                    link="https://quatuorbela.com/le-quatuor-bela/frederic-aurier/"
+                    newPage="true"
                     place_and_time="Le Monal, Sainte-Foy à 11h"
                     musique_style="Ballade - Concert"
                 />
@@ -59,6 +63,8 @@ function FestivalDesPantomines() {
                 <FestivalEventComponent
                     title="TOUFFE DE SPLEEN"
                     title_color="#8cada0"
+                    link="https://www.savoie.fr/web/sw_59525/Culture/Touffedespleen"
+                    newPage="true"
                     place_and_time="La Masure, Sainte-Foy à 19h"
                     musique_style="Caravane - Théâtre"
                 />
@@ -69,6 +75,8 @@ function FestivalDesPantomines() {
                 <FestivalEventComponent
                     title="SIRI BIRK"
                     title_color="#333d67"
+                    link="http://www.siribyrkjedal.com/"
+                    newPage="true"
                     place_and_time="Le planay, Villaroger à 11h30"
                     musique_style="Folk"
                 />

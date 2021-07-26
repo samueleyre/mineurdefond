@@ -51,6 +51,10 @@ export default function NavComponent({mode, sm_mode, position}) {
             link: '/'
         },
         {
+            name: "Festival",
+            link: '/festival-des-pantomines'
+        },
+        {
             name: "Histoire",
             link: '/histoire'
         },
@@ -91,7 +95,7 @@ export default function NavComponent({mode, sm_mode, position}) {
     if (!sm_mode) {
         sm_mode = mode;
     }
-    
+
     return <>
         {!mobile ? (
         <div
