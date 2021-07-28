@@ -24,7 +24,7 @@ function Contact() {
                                                                                               icon={faInstagram}/></a>
                     </div>
                 </div>
-                <img className="m-auto max-w-full" width="600px" src="images/contact-center.png" alt=""/>
+                <img className="m-auto max-w-full" width="600px" src="images/contact-center.webp" alt=""/>
             </div>
         </div>
     </>

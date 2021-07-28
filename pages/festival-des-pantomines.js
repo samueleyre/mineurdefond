@@ -113,7 +113,7 @@ avec le bal de MaDam RamDam offert sous les étoiles !
             </div>
 
             <p className="text-xl underline text-center mt-8 mb-8 pl-4 pr-4">
-            <a className="p-4" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2021.pdf" target="_blank">Télécharger le programme</a>
+            <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2021.pdf" target="_blank">Télécharger le programme</a>
             </p>
 
 
@@ -143,7 +143,10 @@ avec le bal de MaDam RamDam offert sous les étoiles !
             de Haute-Tarentaise.
             </p>
 
+
         </ProjectLayoutComponent>
+        <img src="/images/fest_bot.webp" width="100%" />
+
     </>
 }
 

@@ -87,7 +87,7 @@ export default function HomeMainComponent() {
                 <span className="pl-6 font-amatic">Explorez la mine</span>
             </div>
             <div className="homepage-footer flex items-end">
-                <div className="w-full bg-cover" style={{height: "900px", backgroundImage: 'url("images/bottom_rock.png")'}}>
+                <div className="w-full bg-cover" style={{height: "100%", backgroundImage: 'url("images/bottom_rock.webp")'}}>
                     <div style={{paddingTop: "10rem"}} className="text-7xl pl-10 pr-10 text-white">
                         <a style={{width: "200px"}} className="flex" href="/festival-des-pantomines">
                             <img style={{filter: "brightness(1.3)"}} width="200px" src="images/festival_des.png" alt="Festival des pantomines"/>
