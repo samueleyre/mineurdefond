@@ -9,7 +9,7 @@ function Kolm() {
                 Chansons spirituelles, rustiques & mystérieuses & lutherie imaginaire
             </p>
             <div className="flex flex-wrap justify-evenly items-center mt-16 mb-16">
-                <p className="flex flex-col p-20 text-xl w-5/12">
+                <p className="flex flex-col sm:p-20 text-xl w-5/12 mb-4">
                     <span className="flex flex-col pb-2">
                         <span className="font-bold block">Paolo Gauthier</span>
                         Guitare-cithare, chant, tambour, poèmes & musique
