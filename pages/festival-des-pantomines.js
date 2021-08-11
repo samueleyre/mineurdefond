@@ -92,6 +92,7 @@ avec le bal de MaDam RamDam offert sous les étoiles !
                     title="SIRI BIRK"
                     title_color="#333d67"
                     link="http://www.siribyrkjedal.com/"
+                    listenLink="https://www.youtube.com/watch?v=LiEIICBYmDc"
                     newPage="true"
                     place_and_time="Le Planay, Villaroger à 11h"
                     musique_style="Folk"
