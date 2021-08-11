@@ -37,7 +37,7 @@ function toggleSubMenu() {
     document.getElementById('nav-menu-sub-items').classList.toggle('nav-menu-sub-items--open')
 }
 
-export default function NavComponent({mode, sm_mode, position}) {
+export default function NavComponent({mode, sm_mode, position, mobile_only = false}) {
 
     if (!position) {
         position = "absolute";
@@ -97,7 +97,7 @@ export default function NavComponent({mode, sm_mode, position}) {
     }
 
     return <>
-        {!mobile ? (
+        {!mobile ? !mobile_only ? (
         <div
             className={`${position} nav-menu ${mode === "light" ? "nav-menu--light" : "nav-menu--dark"} ${sm_mode === "light" ? "mobile-nav-menu--light" : "mobile-nav-menu--dark" } mt-4 pl-4 desktop mobileToTabloid:flex z-50`}>
             <div id="nav-menu-icon" onClick={activateMenu} className="nav-menu-icon">
@@ -165,7 +165,7 @@ export default function NavComponent({mode, sm_mode, position}) {
                     </div>
                 </div>
             </div>
-        </div>) : (
+        </div>) : "" : (
         <div
             className={`nav-menu ${sm_mode === "light" ? "nav-menu--light" : "mobile-nav-menu--dark"} absolute w-full mobile z-50`}>
             <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-screen justify-center items-center">

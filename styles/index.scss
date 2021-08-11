@@ -6,6 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-height: 767px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', cursive;
 }
@@ -109,17 +115,70 @@ p, span, a, li {
   position: relative;
   margin: auto;
   transition: filter 0.5s;
-  filter: brightness(0);
-  width: 200px;
-  height: 200px;
   text-align: center;
 }
 
+@media (min-height: 767px) {
+
+  .roche {
+    filter: brightness(0);
+
+    &[data-depth="3"], &[data-depth="3"] .roche-img {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+    }
+
+    &[data-depth="2"], &[data-depth="2"] .roche-img {
+      width: 170px;
+      height: 170px;
+      background-size: 170px 170px;
+    }
+
+    &[data-depth="1"], &[data-depth="1"] .roche-img {
+      width: 150px;
+      height: 150px;
+      background-size: 150px 150px;
+    }
+
+  }
+
+  .roche .text {
+    opacity: 0;
+    color: #dedede;
+  }
+}
+
+@media (max-height: 767px) {
+  .roche {
+    &[data-depth="3"], &[data-depth="3"] .roche-img {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 100px;
+    }
+
+    &[data-depth="2"], &[data-depth="2"] .roche-img {
+      width: 90px;
+      height: 90px;
+      background-size: 90px 90px;
+    }
+
+    &[data-depth="1"], &[data-depth="1"] .roche-img {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+    .text {
+      color: white;
+    }
+  }
+
+
+}
+
 .roche .text {
-  opacity: 0;
   width: 60%;
   transition: opacity 0.5s;
-  color: #dedede;
 }
 
 .roche:hover .text {
@@ -129,8 +188,6 @@ p, span, a, li {
 }
 
 .roche-img {
-  width: 200px;
-  height: 200px;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -195,12 +252,17 @@ p, span, a, li {
   }
 }
 
-
-@media (max-width: 1024px) {
+@media (min-width: 767px) {
   .homepage-explore {
-    display: none;
+    position: absolute;
   }
 }
+
+//@media (max-width: 1024px) {
+//  .homepage-explore {
+//    display: none;
+//  }
+//}
 
 
 /* ------ Exploration Page ------- */
@@ -209,11 +271,11 @@ body {
   background-color: black;
 }
 
-@media(max-width: 1050px) {
-  .exploration {
-    display: none;
-  }
-}
+//@media(max-width: 1050px) {
+//  .exploration {
+//    display: none;
+//  }
+//}
 
 #exploration {
   margin: auto;

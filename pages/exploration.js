@@ -4,7 +4,7 @@ import HeadComponent from "../components/main/head.component";
 
 
 const ExplorationComponent = dynamic(() => import('../components/home/exploration-main.component'), {ssr: false})
-
+const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 function Exploration() {
     return (
@@ -15,6 +15,7 @@ function Exploration() {
               overflow: hidden
             }
           `}</style>
+            <NavComponent mode="light" mobile_only="true" />
             <ExplorationComponent/>
         </>
     )

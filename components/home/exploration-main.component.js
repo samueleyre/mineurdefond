@@ -21,6 +21,10 @@ window.addEventListener("load", function(){
  */
 function mouseMove(e) {
 
+    if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        return;
+    }
+
     const x = e.clientX;
     const y = e.clientY;
 
@@ -61,20 +65,63 @@ function initMouseHallow() {
 export default function ExplorationComponent() {
     return (
         <>
-            <div onMouseMove={mouseMove} className="exploration"  id="exploration" style={{zIndex: 1, position: "absolute", cursor: "none"}}
+
+            <div onMouseMove={mouseMove} className="exploration"  id="exploration" style={{zIndex: 1, position: "fixed", cursor: "none"}}
                  data-pointer-events="true">
-                <div className="layer fonds" data-depth="0"
+                <div className="layer fonds mobile:hidden" data-depth="0"
                      style={{backgroundImage: "url(/images/exploration_bg.jpeg)"}}>
                     <div className="returnLink">
                         <a className="font-amatic text-4xl" href="/">Accueil</a>
                     </div>
                 </div>
-                <ExplorationProjectComponent title="KLANG" bottom="4" right="-20" depth="1" link="klang" rock="caillans"/>
-                <ExplorationProjectComponent title="KOLM" bottom="-20" right="20" depth="1" link="kolm" rock="minus"/>
-                <ExplorationProjectComponent title="Tchoukadane" bottom="-40" right="-70" depth="3" link="tchoukadane" rock="caillans"/>
-                <ExplorationProjectComponent title="Thibault Gomez Quintet" bottom="30" right="70" depth="3" link="thibaultgomezquintet" rock="minus"/>
-                <ExplorationProjectComponent title="Terra Mare" bottom="-40" right="60" depth="2" link="terramare" rock="minus"/>
-                <ExplorationProjectComponent title="Madam RamDam" bottom="30" right="-60" depth="2" link="madamramdam" rock="minus"/>
+                <ExplorationProjectComponent
+                    title="KLANG"
+                    bottom="4"
+                    right="-20"
+                    depth="1"
+                    link="klang"
+                    rock="caillans"
+                />
+                <ExplorationProjectComponent
+                    title="KOLM"
+                    bottom="-20"
+                    right="20"
+                    depth="1"
+                    link="kolm"
+                    rock="minus"
+                />
+                <ExplorationProjectComponent
+                    title="Tchoukadane"
+                    bottom="-40"
+                    right="-70"
+                    depth="3"
+                    link="tchoukadane"
+                    rock="caillans"
+                />
+                <ExplorationProjectComponent
+                    title="Thibault Gomez Quintet"
+                    bottom="30"
+                    right="70"
+                    depth="3"
+                    link="thibaultgomezquintet"
+                    rock="minus"
+                />
+                <ExplorationProjectComponent
+                    title="Terra Mare"
+                    bottom="-40"
+                    right="60"
+                    depth="2"
+                    link="terramare"
+                    rock="minus"
+                />
+                <ExplorationProjectComponent
+                    title="Madam RamDam"
+                    bottom="30"
+                    right="-60"
+                    depth="2"
+                    link="madamramdam"
+                    rock="minus"
+                />
 
             </div>
             <svg className="exploration" id="svg" style={{zIndex: 5, position: "absolute", pointerEvents: "none"}}>
@@ -87,11 +134,11 @@ export default function ExplorationComponent() {
                 <defs>
                     <mask id="mask" x="0" y="0" width="100%" height="100%">
                         <rect x="0" y="0" width="100%" height="100%" fill="#fff"/>
-                        <circle id="circle-mask" r="300"/>
+                        <circle id="circle-mask" r="200"/>
                     </mask>
                 </defs>
                 <rect width="100%" height="100%" mask="url(#mask)"/>
-                <circle id="circle-shadow" cx="831" cy="16" r="300"
+                <circle id="circle-shadow" cx="831" cy="16" r="200"
                         style={{fill: "url(#gradient) transparent", strokeWidth: "68px", stroke: "black"}}/>
             </svg>
             <div className="absolute z-40 bg-black h-full w-full fade-out pointer-events-none"/>

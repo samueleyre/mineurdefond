@@ -12,6 +12,7 @@ export default function HeadComponent({title}) {
             name="description"
             content={`Le collectif des mineurs de fond`}
         />
+        <meta name="keywords" content="mineurs de fond, musique, concert, collectif, pantomines, festival"/>
         <meta property="og:image" content="/images/contact.jpg"/>
     </Head>
 
