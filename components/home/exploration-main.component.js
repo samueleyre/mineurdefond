@@ -1,27 +1,38 @@
 import Parallax from "parallax-js";
 import ExplorationProjectComponent from "./exploration-project.component";
 
+
+if (document.readyState === "complete") {
+  setTimeout(()=> {
+    init();
+  }, 2000);
+}
+
 window.addEventListener("load", function(){
-
-    const parent = document.getElementById('exploration');
-
-    new Parallax(parent, {
-        invertX: true,
-        invertY: true,
-        limitX: 26,
-        limitY: 5,
-    });
-
-    initMouseHallow();
-
+  init();
 });
+
+function init() {
+
+  const parent = document.getElementById('exploration');
+
+  new Parallax(parent, {
+      invertX: true,
+      invertY: true,
+      limitX: 26,
+      limitY: 5,
+  });
+
+  initMouseHallow();
+
+}
 
 /**
  * Special cursor for exploration
  */
 function mouseMove(e) {
 
-    if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         return;
     }
 
@@ -58,6 +69,7 @@ function initMouseHallow() {
     circle.setAttribute("cy", mY.toString())
     shadowCircle.setAttribute("cx", mX.toString())
     shadowCircle.setAttribute("cy", mY.toString());
+    shadowCircle.style.fill = "url(#gradient) transparent";
 }
 
 
@@ -138,8 +150,8 @@ export default function ExplorationComponent() {
                     </mask>
                 </defs>
                 <rect width="100%" height="100%" mask="url(#mask)"/>
-                <circle id="circle-shadow" cx="831" cy="16" r="200"
-                        style={{fill: "url(#gradient) transparent", strokeWidth: "68px", stroke: "black"}}/>
+                <circle id="circle-shadow" r="200"
+                        style={{fill: "black", strokeWidth: "68px", stroke: "black"}}/>
             </svg>
             <div className="absolute z-40 bg-black h-full w-full fade-out pointer-events-none"/>
         </>
