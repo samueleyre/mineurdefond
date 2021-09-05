@@ -11,7 +11,7 @@ function Contact() {
     return <>
         <HeadComponent title="Contact"/>
         <NavComponent mode="light"/>
-        <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 h-screen bg-cover">
+        <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 bg-cover">
             <div className=" mobile:p-2 max-w-screen-lg m-auto">
                 <h1 className="text-6xl text-center white">CONTACT</h1>
                 <div style={{height: "220px"}} className="md:pt-20 mobile:pt-10 flex justify-evenly items-center flex-col">
