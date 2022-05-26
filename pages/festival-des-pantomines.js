@@ -7,8 +7,8 @@ function FestivalDesPantomines() {
         <ProjectRockComponent title="Le festival des Pantomines"
                               description="Du 13 au 15 août 2021 à Villaroger et Sainte-Foy en Savoie">
             <div className="m-auto">
-                <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.png" alt="Festival des pantomines"/>
-                <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.png" alt="Festival des pantomines"/>
+                <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.webp" alt="Festival des pantomines"/>
+                <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.webp" alt="Festival des pantomines"/>
             </div>
 
         </ProjectRockComponent>

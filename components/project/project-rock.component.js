@@ -3,7 +3,7 @@ import HeadComponent from "../main/head.component";
 
 const NavComponent = dynamic(() => import('../main/nav.component'), {ssr: false})
 
-export default function ProjectRockComponent({title, description, image_name = "projectPage_rock.png", children}) {
+export default function ProjectRockComponent({title, description, image_name = "projectPage_rock.webp", children}) {
     return (
         <>
             <HeadComponent title={title}/>
