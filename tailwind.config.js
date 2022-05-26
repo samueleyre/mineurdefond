@@ -32,6 +32,15 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+      animation: {
+        fadeIn: 'fadeIn 400ms ease-in-out',
+      },
+      keyframes: theme => ({
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1},
+        },
+      }),
     },
   },
 }

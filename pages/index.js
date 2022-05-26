@@ -6,7 +6,7 @@ function Index() {
     return (
         <>
             <HeadComponent title=""/>
-            <div className="bg-no-repeat w-full bg-cover " style={{backgroundImage: "url(/images/home_bg.png)"}}>
+            <div className="bg-no-repeat w-full bg-cover " style={{backgroundImage: "url(/images/home_bg.webp)"}}>
                 <HomeHeaderComponent/>
                 <HomeMainComponent/>
             </div>

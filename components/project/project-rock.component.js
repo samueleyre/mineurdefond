@@ -11,7 +11,7 @@ export default function ProjectRockComponent({title, description, image_name = "
             <div className="h-screen w-full bg-white mobile:pb-56">
                 <div className="h-full flex justify-center items-center">
                     <div
-                        className="max-h-screen max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col"
+                        className="animate-fadeIn max-h-screen max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col"
                         style={{height: "800px", width: "800px", backgroundImage: `url(/images/${image_name})`}}>
                         {children ?
                             children :
