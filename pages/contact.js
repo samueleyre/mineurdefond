@@ -11,7 +11,7 @@ function Contact() {
     return <>
         <HeadComponent title="Contact"/>
         <NavComponent mode="light"/>
-        <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 bg-cover">
+        <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 bg-cover min-h-screen	">
             <div className=" mobile:p-2 max-w-screen-lg m-auto">
                 <h1 className="text-6xl text-center white">CONTACT</h1>
                 <div style={{height: "220px"}} className="md:pt-20 mobile:pt-10 flex justify-evenly items-center flex-col">
@@ -24,7 +24,7 @@ function Contact() {
                                                                                               icon={faInstagram}/></a>
                     </div>
                 </div>
-                <img className="m-auto max-w-full" width="600px" src="images/contact-center.webp" alt=""/>
+                <img className="m-auto max-w-full" width="600px" src="images/contact-center-1000.webp" alt=""/>
             </div>
         </div>
     </>
