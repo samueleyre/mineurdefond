@@ -21,7 +21,7 @@ function FestivalDesPantomines() {
             </p>
             <p className="text-xl pt-8 mb-8 pl-4 pr-4 bold">
                 Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes, alpaguer le randonneur et faire guincher la savoyarde ! <br/><br/>
-                Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel naturel ou architectural de la Haute-Tarentaise.
+                Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel de la Haute-Tarentaise.
             </p>
             <p className="text-xl mb-8 pl-4 pr-4">
                 Buvette sur place <br/>
@@ -36,6 +36,7 @@ function FestivalDesPantomines() {
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
 
                 <FestivalEventComponent
+                    image="balade.jpeg"
                     title="Marche du temps profond"
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
@@ -70,6 +71,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
             <p className="text-center pt-10 pb-8 text-2xl" style={{color: "grey"}}>Demi-journée champêtre aux Îles - Villaroger</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
                 <FestivalEventComponent
+                        image="etienne-dehors.jpeg"
                         title="Sieste sonore"
                         title_color="#a76a53"
                         place_and_time="14h30 - Les Îles - Villaroger"
@@ -88,7 +90,15 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                     />
             </div>
             <p className="p-6 text-4xl">Dimanche 14 Août</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-28 sm:pr-28 flex flex-wrap justify-center">
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
+                <FestivalEventComponent
+                    image="balade.jpeg"
+                    title="Marche du temps profond [BIS]"
+                    title_color="#a76a53"
+                    place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
+                    musique_style="Balade poético-scientifique avec Antoine Gonthier"
+                    description="Une promenade poético-scientifique de 4,6km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 1 million d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
+                />
                 <FestivalEventComponent
                     image="9m2.png"
                     title="9m2 de banquise"
@@ -101,7 +111,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                 />
             </div>
             <p className="p-6 mt-6 text-3xl text-center" style={{color: "grey"}}>GRAND BAL !</p>
-            <p className="pb-8 text-2xl text-center" style={{color: "#a76a53"}}>Venez manger, guincher et trinquer à Planjo pour un Bal du 15 Août exotique et détonnant !</p>
+            <p className="pb-8 text-2xl text-center" style={{color: "#a76a53"}}>Venez manger, guincher et trinquer à Planjo pour un Bal du 15 Août détonnant !</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
 
                 <FestivalEventComponent
@@ -118,7 +128,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                     title_color="#a76a53"
                     place_and_time="22h"
                     musique_style="DJ set éclectique et théâtral"
-                    description="Simon Teissier (platines, vinyles, jeu) nous concocte un set plein de surprise. Vous êtes plutôt Sun & Surf 70s, XXX 80s, New wave 90s, Teens 2000s’ ou so 2020 ?"
+                    description="Simon Teissier (platines, vinyles, jeu) nous concocte un set plein de surprise. Vous êtes plutôt Sun & Surf 70s, Disco paillettes 80s, Nouvelle vague 90s ... ?"
                 />
             </div>
             <p className="p-6 text-xl text-center" style={{color: "grey"}}>Fermeture du site à 00h30</p>
