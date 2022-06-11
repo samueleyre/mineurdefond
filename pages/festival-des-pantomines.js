@@ -36,7 +36,7 @@ function FestivalDesPantomines() {
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
 
                 <FestivalEventComponent
-                    image="balade.jpeg"
+                    image="balade.webp"
                     title="Marche du temps profond"
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
@@ -71,7 +71,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
             <p className="text-center pt-10 pb-8 text-2xl" style={{color: "grey"}}>Demi-journée champêtre aux Îles - Villaroger</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
                 <FestivalEventComponent
-                        image="etienne-dehors.jpeg"
+                        image="etienne-dehors.webp"
                         title="Sieste sonore"
                         title_color="#a76a53"
                         place_and_time="14h30 - Les Îles - Villaroger"
@@ -92,7 +92,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
             <p className="p-6 text-4xl">Dimanche 14 Août</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
                 <FestivalEventComponent
-                    image="balade.jpeg"
+                    image="balade.webp"
                     title="Marche du temps profond [BIS]"
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
@@ -182,7 +182,7 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4 underline">
-                <a href="festival-des-pantomines-2021" target="_blank">Le programme de l'édition précédante</a>
+                <a href="festival-des-pantomines-2021" target="_blank">Le programme de l'édition précédente</a>
             </p>
 
 
