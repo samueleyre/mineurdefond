@@ -1,9 +1,9 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 
-function Kolm() {
+function Zizio() {
     return <>
-        <ProjectRockComponent title="Terra Mare" description="Paolo Gauthier – Chansons – Guitare-cithare"/>
+        <ProjectRockComponent title="Zozio" description="Paolo Gauthier – Chansons – Guitare-cithare"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">
                 Chansons spirituelles, rustiques & mystérieuses & lutherie imaginaire
