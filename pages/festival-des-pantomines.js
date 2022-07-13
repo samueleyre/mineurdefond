@@ -1,11 +1,12 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 import FestivalEventComponent from "../components/festival/festival-event.component";
+import HeadComponent from "../components/main/head.component";
 
 function FestivalDesPantomines() {
     return <>
         <ProjectRockComponent title="Le festival des Pantomines"
-                              description="Du 13 au 15 août 2021 à Villaroger et Sainte-Foy en Savoie">
+                              meta_description="Du 12 au 15 août 2022 à Villaroger et Sainte-Foy en Savoie">
             <div className="m-auto">
                 <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.webp" alt="Festival des pantomines"/>
                 <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.webp" alt="Festival des pantomines"/>
@@ -24,8 +25,8 @@ function FestivalDesPantomines() {
                 Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel de la Haute-Tarentaise.
             </p>
             <p className="text-xl mb-8 pl-4 pr-4">
-                Buvette sur place <br/>
-                Prix libre
+                <span class="italic">Buvette sur place</span> <br/>
+                <span class="italic">Prix libre</span>
             </p>
             <br/>
             <br/>

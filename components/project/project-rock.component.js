@@ -3,10 +3,10 @@ import HeadComponent from "../main/head.component";
 
 const NavComponent = dynamic(() => import('../main/nav.component'), {ssr: false})
 
-export default function ProjectRockComponent({title, description, image_name = "projectPage_rock.webp", children}) {
+export default function ProjectRockComponent({title, description, meta_description = null, image_name = "projectPage_rock.webp", children}) {
     return (
         <>
-            <HeadComponent title={title}/>
+            <HeadComponent title={title} meta_description={meta_description}/>
             <NavComponent mode="dark" sm_mode="light" position="fixed"/>
             <div className="h-screen w-full bg-white mobile:pb-56">
                 <div className="h-full flex justify-center items-center">
