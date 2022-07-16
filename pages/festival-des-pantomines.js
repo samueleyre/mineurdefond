@@ -14,9 +14,9 @@ function FestivalDesPantomines() {
 
         </ProjectRockComponent>
         <ProjectLayoutComponent>
-            <p className="text-2xl pt-8 mb-2 text-center italic" style={{color: "grey"}}>
-                12-13-14-15 Août 2022
-            </p>
+            <h1 className="text-4xl pt-2 mb-2 text-center italic" style={{color: "grey"}}>
+                Festival des pantomines, 12-13-14-15 Août 2022
+            </h1>
             <p className="text-xl mb-6 text-center italic" style={{color: "grey"}}>
                 en Savoie
             </p>
