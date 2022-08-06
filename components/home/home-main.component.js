@@ -96,7 +96,7 @@ export default function HomeMainComponent() {
                             <img style={{filter: "brightness(1.3)"}} width="280px" src="images/pantomines.png" alt="Festival des pantomines"/>
                         </a>
                         <div className="mt-10">
-                            <p className="text-xl md:pr-40" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes, alpaguer le randonneur et faire guincher la savoyarde !</p>
+                            <p className="text-xl md:pr-40" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes !</p>
                             <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pantomines">Voir le programme !</a>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ function FestivalDesPantomines() {
                 en Savoie
             </p>
             <p className="text-xl pt-8 mb-8 pl-4 pr-4 bold">
-                Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes, alpaguer le randonneur et faire guincher la savoyarde ! <br/><br/>
+                Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes ! <br/><br/>
                 Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel de la Haute-Tarentaise.
             </p>
             <p className="text-xl mb-8 pl-4 pr-4">
@@ -42,7 +42,7 @@ function FestivalDesPantomines() {
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
                     musique_style="Balade poético-scientifique avec Antoine Gonthier"
-                    description="Une promenade poético-scientifique de 4,6km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 1 million d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
+                    description="Une promenade poético-scientifique de 2,3km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 2 millions d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
                 />
 
                 <FestivalEventComponent
@@ -64,7 +64,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                     title="Jeanne Bleuse"
                     title_color="#a76a53"
                     place_and_time="10h - Pierre Giret - Sainte-Foy Tarentaise"
-                    musique_style="piano et clavecin"
+                    musique_style="Piano et clavecin, une invitation au voyage"
                     description="La pianiste vagabonde Jeanne Bleuse se lance dans un seul en scène original et virtuose qui renouvelle le récital classique. S’amusant avec les codes du genre, la soliste passe du piano au clavecin, dans un vrai numéro de cirque musical. Jeanne Bleuse nous transporte des confins de la renaissance aux rivages modernes grâce aux plus belles pages du répertoire. De Mozart à Satie et Rameau, en passant par les rythmes flamenco de Falla, le jazz langoureux de Gershwin… jusqu'aux compositeurs d’aujourd'hui."
                     listenLink="https://youtu.be/lacZV6nZ25g"
                 />
@@ -75,9 +75,9 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                         image="etienne-dehors.webp"
                         title="Sieste sonore"
                         title_color="#a76a53"
-                        place_and_time="14h30 - Les Îles - Villaroger"
+                        place_and_time="16h - Les Îles - Villaroger"
                         musique_style="musique contemplative avec Thibault Gomez (piano, claviers, électronique), Etienne Renard (contrebasse) et Vincent Duchosal (guitares)"
-                        description="Une invitation à la contemplation sonore dans un havre naturellement paisible. Trois musiciens rompus à l’improvisation vont pour extraire de leurs instruments des sonorités insoupçonnées, entre symbiose et confrontation instrumentale. De quoi faire frémir les oiseaux environnants, en toute décontraction. " />
+                        description="Une invitation à la contemplation sonore dans un havre naturellement paisible. Trois musiciens rompus à l’improvisation vont extraire de leurs instruments des sonorités insoupçonnées à faire frémir les oiseaux environnants, en toute décontraction. " />
 
                 <FestivalEventComponent
                         image="crusoe.jpg"
@@ -98,7 +98,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
                     musique_style="Balade poético-scientifique avec Antoine Gonthier"
-                    description="Une promenade poético-scientifique de 4,6km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 1 million d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
+                    description="Une promenade poético-scientifique de 2,3km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 2 millions d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
                 />
                 <FestivalEventComponent
                     image="9m2.png"
@@ -112,6 +112,7 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
                 />
             </div>
             <p className="p-6 mt-6 text-3xl text-center" style={{color: "grey"}}>GRAND BAL !</p>
+            <p className="pb-8 text-2xl text-center">19h - Ouverture du site et restauration sur place</p>
             <p className="pb-8 text-2xl text-center" style={{color: "#a76a53"}}>Venez manger, guincher et trinquer à Planjo pour un Bal du 15 Août détonnant !</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
 
@@ -136,14 +137,14 @@ Seul avec son violon, il raconte comment il a découvert la tradition populaire,
             <p className="p-6 text-4xl">Lundi 15 Août</p>
                 <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
                 <FestivalEventComponent
-                    title="Grand Banquet"
+                    title="Radio Crochet + Grand Banquet"
                     title_color="#a76a53"
                     place_and_time="11h - place du chef-lieu - Villaroger"
                     musique_style="Radio Crochet avec l'orchestre des Pantomines"
                     description="Ouvert à toutes et tous <br>
-Venez chanter une ou plusieurs chansons de votre choix accompagnés par les musiciens des Pantomines. <br><br>
+Venez chanter une ou plusieurs chansons de votre choix accompagnés par les musiciens des Pantomines avec un repas en banquet. <br><br>
 <b>> Inscrivez-vous !</b> <br><br>
-Nous pouvons organiser des répétitions avant la date du banquet."
+Nous pouvons organiser des répétitions avant la date."
                 />
                 <FestivalEventComponent
                     image="ispolin.jpeg"
@@ -178,12 +179,16 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
                 Tous les spectacles sont à prix libre (mais conseillé 10€).
             </p>
 
+            <p className="text-center">
+                Vous pouvez suivre l'évènement sur <a class="underline" style={{color: "#a76a53"}} href="https://www.facebook.com/CollectifMineursdefond" target="_blank">Facebook</a> et <a style={{color: "#a76a53"}} class="underline" href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank">Instagram</a>
+            </p>
+
             <p className="text-center mt-16 mb-8 pl-4 pr-4">
                 Le Festival des Pantomines est réalisé avec l’aide de la Communauté de Commune de Haute-Tarentaise, des Communes de Villaroger et de Sainte Foy et du département de la Savoie.
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4 underline">
-                <a href="festival-des-pantomines-2021" target="_blank">Le programme de l'édition précédente</a>
+                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2021" target="_blank">Le programme de l'édition précédente</a>
             </p>
 
 
