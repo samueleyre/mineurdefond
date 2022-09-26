@@ -37,7 +37,7 @@ export default function() {
             </div>
             <figure
                 className="flex justify-center mt-16">
-                <iframe width="700" height="400" src="https://youtu.be/pD4rJXb_Xy4?feature=oembed"
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/pD4rJXb_Xy4?feature=oembed"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen=""></iframe>
