@@ -262,24 +262,11 @@ p, span, a, li {
   }
 }
 
-//@media (max-width: 1024px) {
-//  .homepage-explore {
-//    display: none;
-//  }
-//}
-
-
 /* ------ Exploration Page ------- */
 
 body {
   background-color: black;
 }
-
-//@media(max-width: 1050px) {
-//  .exploration {
-//    display: none;
-//  }
-//}
 
 #exploration {
   margin: auto;
@@ -312,7 +299,6 @@ body {
 }
 
 #exploration .returnLink:hover {
-  //background-color: #000000b5;
   text-shadow: #000 2px 2px 1px;
   transition: 0.3s ease;
 }
@@ -330,7 +316,4 @@ svg.exploration {
   height: 100vh;
   cursor: none;
   color: #0b0b0b;
-  // #circle-shadow {
-  //     fill: black;
-  // }
 }

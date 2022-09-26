@@ -82,8 +82,8 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             link: '/tchoukadane'
         },
         {
-            name: "Terra Mare",
-            link: '/terramare'
+            name: "Zozio",
+            link: '/zozio'
         },
         {
             name: "Thibault Gomez Quintet",

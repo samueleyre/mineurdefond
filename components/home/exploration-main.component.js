@@ -119,11 +119,11 @@ export default function ExplorationComponent() {
                     rock="minus"
                 />
                 <ExplorationProjectComponent
-                    title="Terra Mare"
+                    title="Zozio"
                     bottom="-40"
                     right="60"
                     depth="2"
-                    link="terramare"
+                    link="zozio"
                     rock="minus"
                 />
                 <ExplorationProjectComponent
