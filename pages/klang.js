@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
 import ProjectRockComponent from "../components/project/project-rock.component";
-import Head from "next/head";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 
 function Klang() {

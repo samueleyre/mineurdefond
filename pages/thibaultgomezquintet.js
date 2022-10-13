@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import ProjectRockComponent from "../components/project/project-rock.component";
 import Head from "next/head";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
+import Image from "next/image";
 const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 function Kolm() {
@@ -60,7 +61,6 @@ function Kolm() {
                 <img className="p-2 w-6/12" src="images/etienne.jpg" alt=""/>
                 <img className="p-2 w-6/12" src="images/thibault.jpg" alt=""/>
             </div>
-
 
 
         </ProjectLayoutComponent>

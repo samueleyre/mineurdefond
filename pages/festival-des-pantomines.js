@@ -1,7 +1,7 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 import FestivalEventComponent from "../components/festival/festival-event.component";
-import HeadComponent from "../components/main/head.component";
+
 
 function FestivalDesPantomines() {
     return <>
@@ -25,8 +25,8 @@ function FestivalDesPantomines() {
                 Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel de la Haute-Tarentaise.
             </p>
             <p className="text-xl mb-8 pl-4 pr-4">
-                <span class="italic">Buvette sur place</span> <br/>
-                <span class="italic">Prix libre</span>
+                <span className="italic">Buvette sur place</span> <br/>
+                <span className="italic">Prix libre</span>
             </p>
             <br/>
             <br/>
@@ -162,7 +162,7 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
 
 
             <p className="text-xl underline text-center mt-8 mb-8 pl-4 pr-4">
-                <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2022.pdf" target="_blank">Télécharger le programme</a>
+                <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2022.pdf" target="_blank" rel="noreferrer">Télécharger le programme</a>
             </p>
 
 
@@ -180,7 +180,7 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
             </p>
 
             <p className="text-center">
-                Vous pouvez suivre l'évènement sur <a class="underline" style={{color: "#a76a53"}} href="https://www.facebook.com/CollectifMineursdefond" target="_blank">Facebook</a> et <a style={{color: "#a76a53"}} class="underline" href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank">Instagram</a>
+                Vous pouvez suivre l'évènement sur <a className="underline" style={{color: "#a76a53"}} href="https://www.facebook.com/CollectifMineursdefond" target="_blank" rel="noreferrer">Facebook</a> et <a style={{color: "#a76a53"}} class="underline" href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank" rel="noreferrer">Instagram</a>
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4">
@@ -188,14 +188,14 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4 underline">
-                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2021" target="_blank">Le programme de l'édition précédente</a>
+                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2021" target="_blank" rel="noreferrer">Le programme de l'édition précédente</a>
             </p>
 
 
 
 
         </ProjectLayoutComponent>
-        <img src="/images/fest_bot.webp" width="100%" />
+        <img alt="festival image" src="/images/fest_bot.webp" width="100%" />
 
     </>
 }

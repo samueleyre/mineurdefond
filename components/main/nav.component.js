@@ -161,7 +161,7 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
                     {navs.map((nav, index) => {
 
                         if ("submenu" in nav) {
-                            return <div className="nav-menu-item">
+                            return <div key={index} className="nav-menu-item">
                                 <a href="#" onClick={() => toggleSubMenu(nav.submenu)}>
                                     <span className="pr-1">{nav.name}</span>
                                     <FontAwesomeIcon className="nav-menu-item-projets w-3" icon={faAngleRight}/>
@@ -212,7 +212,7 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
                 <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
                     {navs.map((nav, index) => {
                         if ("submenu" in nav) {
-                            return <div className="nav-menu-item ">
+                            return <div key={index} className="nav-menu-item ">
                                 <a className="flex items-center" href="#" onClick={() => toggleSubMenu(nav.submenu)}>
                                     <span className="pr-1">{nav.name}</span>
                                     <FontAwesomeIcon className="w-3" icon={faAngleRight}/>

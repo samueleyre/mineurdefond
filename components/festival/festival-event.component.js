@@ -31,7 +31,7 @@ export default function FestivalEventComponent(
                 : ""
             }
 
-            <a href={link} target={newPage ? "_blank" : "_self"} style={link ? {cursor: "pointer"} : {cursor: "default"}}>
+            <a href={link} target={newPage ? "_blank" : "_self"} rel="noreferrer" style={link ? {cursor: "pointer"} : {cursor: "default"}}>
                 <h5 className="text-4xl pb-4 font-bold" style={{color: title_color}}>{title}</h5>
             </a>
             <p>{place_and_time}</p>
@@ -40,11 +40,11 @@ export default function FestivalEventComponent(
             </p>
             <div className="flex flex-col items-center justify-center">
               { listenLink ?
-                <a className="underline mt-4" target="_blank" href={listenLink}>Écouter</a>
+                <a className="underline mt-4" target="_blank" rel="noreferrer" href={listenLink}>Écouter</a>
                 : ""
                }
                { fbEvent ?
-                <a className="underline mt-2" target="_blank" href={fbEvent}>Plus d'infos/évènement Fb</a>
+                <a className="underline mt-2" target="_blank" rel="noreferrer" href={fbEvent}>Plus d'infos/évènement Fb</a>
                 : ""
                }
             </div>

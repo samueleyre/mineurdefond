@@ -1,6 +1,8 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 import FestivalEventComponent from "../components/festival/festival-event.component";
+import Image from "next/image";
+
 
 function FestivalDesPantomines() {
     return <>
@@ -114,7 +116,7 @@ avec le bal de MaDam RamDam offert sous les étoiles !
             </div>
 
             <p className="text-xl underline text-center mt-8 mb-8 pl-4 pr-4">
-            <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2021.pdf" target="_blank">Télécharger le programme</a>
+            <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2021.pdf" target="_blank" rel="noreferrer">Télécharger le programme</a>
             </p>
 
 
@@ -135,7 +137,7 @@ avec le bal de MaDam RamDam offert sous les étoiles !
 
 
             <p className="text-center">
-            Vous pouvez suivre l'évènement sur Facebook : <a href="https://fb.me/e/5hcGg9hG0" target="_blank">https://fb.me/e/5hcGg9hG0</a>
+            Vous pouvez suivre l'évènement sur Facebook : <a href="https://fb.me/e/5hcGg9hG0" target="_blank" rel="noreferrer">https://fb.me/e/5hcGg9hG0</a>
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4">
@@ -146,7 +148,7 @@ avec le bal de MaDam RamDam offert sous les étoiles !
 
 
         </ProjectLayoutComponent>
-        <img src="/images/fest_bot.webp" width="100%" />
+        <img alt="peinture de la vallee" src="/images/fest_bot.webp" width="100%" />
 
     </>
 }

@@ -1,7 +1,8 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 
-export default function() {
+
+export default function Zozio() {
     return <>
         <ProjectRockComponent title="Zozio" description="Musique chaloupée / Séga du crépuscule / Chanson douce électrique"/>
         <ProjectLayoutComponent>
