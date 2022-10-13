@@ -89,15 +89,9 @@ export default function HomeMainComponent() {
             <div className="homepage-footer flex items-end">
                 <div className="w-full bg-cover" style={{height: "100%", backgroundImage: 'url("images/bottom_rock.webp")'}}>
                     <div style={{paddingTop: "10rem"}} className="text-7xl pl-10 pr-10 text-white pb-10">
-                        <a style={{width: "200px"}} className="flex" href="/festival-des-pantomines">
-                            <img style={{filter: "brightness(1.3)"}} width="200px" src="images/festival_des.png" alt="Festival des pantomines"/>
-                        </a>
-                        <a style={{width: "280px"}} className="flex" href="/festival-des-pantomines">
-                            <img style={{filter: "brightness(1.3)"}} width="280px" src="images/pantomines.png" alt="Festival des pantomines"/>
-                        </a>
-                        <div className="mt-10">
-                            <p className="text-xl md:pr-40" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes !</p>
-                            <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pantomines">Voir le programme !</a>
+                        <div className="mt-20 pb-4 md:pr-40">
+                            <h1 className="text-6xl">Les Mineurs de fond</h1>
+                            <p className="text-xl mt-4" style={{maxWidth: "756px"}}>Le collectif Mineurs de fond colporte un "art mineur," celui fait par les vents et érodé par les diversités, en proposant de se rencontrer lors de ballade rupestre, bal ou veillée et caravane-théâtre où on aurait pas forcément mit les pieds.</p>
                         </div>
                     </div>
                 </div>
