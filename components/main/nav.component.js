@@ -47,6 +47,22 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
 
     const navs = [
         {
+            name: "Accueil",
+            link: '/'
+        },
+        {
+            name: "Dates",
+            link: '/events'
+        },
+        {
+            name: "Projets",
+            submenu: "project"
+        },
+        {
+            name: "Festival",
+            submenu: "edition"
+        },
+        {
             name: "Histoire",
             link: '/histoire'
         },
@@ -54,7 +70,7 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             name: "Contact",
             link: '/contact'
         },
-    ].filter((nav => nav.link !== router.pathname));
+    ].filter((nav => "submenu" in nav || nav.link !== router.pathname));
 
     const projects_nav = [
         {
@@ -142,26 +158,20 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
                 <div id="nav-menu-main-items"
                      className="nav-menu-main-items nav-menu-main-items--open nav-menu-items absolute mobileToTabloid:mb-2 mobileToTabloid:flex-row mobileToTabloid:overflow-x-auto">
 
-                    <div key="0" className="nav-menu-item">
-                        <Link href="/">Accueil</Link>
-                    </div>
-                    <div className="nav-menu-item">
-                        <a href="#" onClick={() => toggleSubMenu("project")}>
-                            <span className="pr-1">Projets</span>
-                            <FontAwesomeIcon className="nav-menu-item-projets w-3" icon={faAngleRight}/>
-                        </a>
-                    </div>
-                    <div className="nav-menu-item">
-                        <a href="#" onClick={() => toggleSubMenu("edition")}>
-                            <span className="pr-1">Festival</span>
-                            <FontAwesomeIcon className="nav-menu-item-projets w-3" icon={faAngleRight}/>
-                        </a>
-                    </div>
-
                     {navs.map((nav, index) => {
-                        return <div key={index} className="nav-menu-item">
-                            <Link href={nav.link}>{nav.name}</Link>
-                        </div>
+
+                        if ("submenu" in nav) {
+                            return <div className="nav-menu-item">
+                                <a href="#" onClick={() => toggleSubMenu(nav.submenu)}>
+                                    <span className="pr-1">{nav.name}</span>
+                                    <FontAwesomeIcon className="nav-menu-item-projets w-3" icon={faAngleRight}/>
+                                </a>
+                            </div>
+                        } else {
+                            return <div key={index} className="nav-menu-item">
+                                <Link href={nav.link}>{nav.name}</Link>
+                            </div>
+                        }
                     })}
 
                 </div>
@@ -200,25 +210,19 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             className={`nav-menu ${sm_mode === "light" ? "nav-menu--light" : "mobile-nav-menu--dark"} absolute w-full mobile z-50`}>
             <div id="nav-menu-items-wrapper" className="nav-menu-items-wrapper absolute bg-black flex w-full h-screen justify-center items-center">
                 <div id="nav-menu-main-items" className="nav-menu-main-items nav-menu-main-items--open nav-menu-items">
-                    <div key="0" className="nav-menu-item">
-                        <Link href="/">Accueil</Link>
-                    </div>
-                    <div className="nav-menu-item ">
-                        <a className="flex items-center" href="#" onClick={() => toggleSubMenu("project")}>
-                            <span className="pr-1">Projets</span>
-                            <FontAwesomeIcon className="w-3" icon={faAngleRight}/>
-                        </a>
-                    </div>
-                    <div className="nav-menu-item ">
-                        <a className="flex items-center" href="#" onClick={() => toggleSubMenu("edition")}>
-                            <span className="pr-1">Festival</span>
-                            <FontAwesomeIcon className="w-3" icon={faAngleRight}/>
-                        </a>
-                    </div>
                     {navs.map((nav, index) => {
-                        return <div key={index} className="nav-menu-item">
-                            <Link href={nav.link}>{nav.name}</Link>
-                        </div>
+                        if ("submenu" in nav) {
+                            return <div className="nav-menu-item ">
+                                <a className="flex items-center" href="#" onClick={() => toggleSubMenu(nav.submenu)}>
+                                    <span className="pr-1">{nav.name}</span>
+                                    <FontAwesomeIcon className="w-3" icon={faAngleRight}/>
+                                </a>
+                            </div>
+                        } else {
+                            return <div key={index} className="nav-menu-item">
+                                <Link href={nav.link}>{nav.name}</Link>
+                            </div>
+                        }
                     })}
                 </div>
                 <div id="nav-menu-sub-items-projects" className="nav-menu-sub-items nav-menu-items">

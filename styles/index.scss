@@ -76,6 +76,15 @@ p, span, a, li {
   color: white;
 }
 
+.text-gradient-color {
+  background: -webkit-linear-gradient(45deg, #e54c21 40%, #1C4BED 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (min-width: 768px) {
+    width: max-content;
+  }
+}
+
 @media (min-width: 768px) {
   .mobile-only {
     display: none;
@@ -317,3 +326,5 @@ svg.exploration {
   cursor: none;
   color: #0b0b0b;
 }
+
+
