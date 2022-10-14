@@ -7,7 +7,7 @@ export default function Zozio() {
         <ProjectRockComponent title="Zozio" description="Musique chaloupée / Séga du crépuscule / Chanson douce électrique"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">
-                Nourri des musiques de La Réunion, du Mexique, d’Europe, ZOZIO puise son énergie dans les mélodies traditionnelles de ces différents pays pour créer une musique originale, singulière, dansante, capable de faire remuer les plumes de tout oiseau de nuit souhaitant tanguer, piafffer, rouler, chavirer
+                Nourri des musiques de La Réunion et d'ailleurs, ZOZIO puise son énergie dans les mélodies traditionnelles de ces différents pays pour créer une musique originale, singulière, dansante, capable de faire remuer les plumes de tout oiseau de nuit souhaitant tanguer, piafffer, rouler, chavirer
             </p>
             <div className="flex flex-wrap justify-evenly items-center mt-16 mb-16">
                 <p className="flex flex-col sm:p-20 text-xl w-5/12 mb-4">

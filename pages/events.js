@@ -37,7 +37,7 @@ export default class Events extends Component {
                     <>
                     <h1 className="text-6xl text-center white mb-20">DATES A VENIR</h1>
                     {this.events.map((event, index) => {
-                        return <a key={index} className="sm:duration-300 sm:ease-in-out sm:grayscale sm:hover:grayscale-0" target="_blank" rel="noreferrer" href={event.link}><div className="p-4 flex white mb-20 mobile:flex-col mobile:text-center mobile:items-center">
+                        return <a key={index} className="sm:duration-300 sm:ease-in-out sm:grayscale sm:hover:grayscale-0" target={event.link ? "_blank" : "_self"} rel="noreferrer" href={event.link ? event.link : "javascript:void(0)"}><div className="p-4 flex white mb-20 mobile:flex-col mobile:text-center mobile:items-center">
                             <div> {/*no choice but to use a div here*/}
                                 {event.image !== null ? (
                                     <Image layout="fixed" width="200px" height="200px" src={event.image[0].url}  alt={event.name} className="rounded-full object-cover mobile:pt-10"/>

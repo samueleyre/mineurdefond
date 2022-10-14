@@ -11,6 +11,9 @@ function Kolm() {
                 KOLM flirte aussi bien avec la liberté du free jazz,
                 l’énergie d’un rock progressif obsessionnel que la virtuosité des musiques contemporaines.
             </p>
+            <div className="max-w-full flex justify-center mt-20">
+                <iframe style={{border: 0, width: "350px", height: "350px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1346742801/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://collectifmineursdefond.bandcamp.com/album/kolm-2022">KOLM - 2022 by KOLM</a></iframe>
+            </div>
             <div className="flex flex-wrap justify-evenly items-center mt-16 mb-16">
                 <p className="flex flex-col p-20 text-xl">
                     <span><span className="font-bold">Adrien Desse</span> // Batterie  </span>
@@ -23,16 +26,14 @@ function Kolm() {
                 </div>
             </div>
             <p className="text-center m-auto text-xl md:w-6/12">
-                « C’est un trio ayant tété du conservatoire, des recherches en
-                contrepoint et de quelques arcanes du Free from US mêlées à
-                l’avant-garde frenchie »
+                « Ficelé comme un Power Trio, KOLM se joue des règles et des codes. Assauts électriques, saillies acoustiques nourrissent la richesse sonore d’un groupe peu en reste d’inventivité. KOLM convoque les libertés du free jazz, l’énergie fusion et la virtuosité des musiques d’avant-garde. Loïc Vergnaux, clarinettes, Vincent Duchosal, guitare électrique, et Adrien Desse, batterie, ont posé ce trio donc au-delà des codes. Aucun rôle n’est défini par instrument. Les pistes ouvertes sont ainsi fascinantes. »
             </p>
             <p className="font-bold text-center p-5">
                 Guillaume Malvoisin – Point Break
             </p>
             <figure
                 className="flex justify-center mt-16">
-                <iframe width="700" height="400" src="https://www.youtube.com/embed/dXFOGTFvKOo?feature=oembed"
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/a6h9DIlvb1g?feature=oembed"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen=""></iframe>
@@ -40,10 +41,6 @@ function Kolm() {
             <p className="text-sm text-center p-2">
                 Teaser
             </p>
-            <div style={{width: "700px"}} className="max-w-full m-auto mt-20">
-                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/762726490&color=%230d0d14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            </div>
         </ProjectLayoutComponent>
     </>
 }
