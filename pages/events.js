@@ -47,7 +47,7 @@ export default class Events extends Component {
                             </div>
                             <div className="mobile:pt-4 sm:ml-10">
                                 <h2 className="text-4xl text-gradient-color sm:w-max">{event.name}</h2>
-                                <h3 className="text-2xl">{event.date} · {event.hour ? event.hour + "h · " : ""}{event.place}</h3>
+                                <h3 className="text-2xl">{new Date(event.date).toLocaleDateString()} · {event.hour ? event.hour + "h · " : ""}{event.place}</h3>
                                 <p className="pt-4 mobile:text-justify">{event.description}</p>
                             </div>
                         </div></a>
