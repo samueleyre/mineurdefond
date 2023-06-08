@@ -1,6 +1,5 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
-import FestivalEventComponent from "../components/festival/festival-event.component";
 import FestivalEventV2Component from "../components/festival/festival-event-v2.component";
 
 
@@ -51,129 +50,127 @@ function FestivalDesPantomines() {
             <p className="text-2xl mb-6 text-center mt-16 italic" style={{color: "grey"}}>
                 PROGRAMME
             </p>
-            <p className="p-6 text-4xl">Vendredi 11 Août</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 flex flex-wrap justify-center">
+            <p className="p-6 text-4xl text-center">Vendredi 11 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
+
+                <FestivalEventV2Component
+                    image="petit_prince.webp"
+                    title="Le Petit Prince - théâtre tout public"
+                    title_color="#a76a53"
+                    place_and_time="19h - parking de Pierre Giret, Sainte Foy"
+                    actors="Johan Boutin et Pauline Drach, jeu ; Benjamin Groetzinger (Compagnie Démembrée), mise en scène ; Tom Georgel, création musicale"
+                    description={"Dans un théâtre de verdure, le personnage d’Antoine de Saint-Exupéry prend vie avec une clairvoyance et une profondeur intactes. À travers une mise en scène en résonance avec le monde agricole et son rapport au vivant, il réveille avec sa poésie virulente l'enfant resté en chacun de nous, révolté face à l'absurdité du monde et la folie \"des grandes personnes\". Avec une magnifique création musicale, cette adaptation respecte le texte original tout en déplaçant son univers en terre agricole pour mieux interroger, à la faveur du crépuscule, notre monde contemporain."}
+                    copyright="J-P Dupraz"
+                    image_position="top"
+
+                />
+
+            </div>
+            <p className="p-6 text-4xl text-center">Samedi 12 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24  flex flex-wrap justify-center">
 
                 <FestivalEventV2Component
                     image="balade.webp"
-                    title="Le Petit Prince - théâtre tout public"
+                    title="Balade sur les hauts de Sainte-Foy-Tarentaise"
                     title_color="#a76a53"
-                    place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
-                    musique_style="Balade poético-scientifique avec Antoine Gonthier"
-                    description="Une promenade poético-scientifique de 2,3km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 2 millions d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
-                    copyright="J-P Dupraz"
+                    place_and_time="10h : départ de la Station de ski Sainte-Foy"
+                    description="Joignez-vous à une randonnée originale face aux glaciers ! Notre guide de montagne nous emmènera à la rencontre de deux habitants de la région pour découvrir d’étonnantes histoires locales."
+                    actors="Durée 3h"
                 />
-
-            </div>
-            <p className="p-6 text-4xl">Samedi 13 Août</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-28 sm:pr-28 flex flex-wrap justify-center">
-
-                <FestivalEventComponent
-                    image="jeanne.jpeg"
-                    title="Jeanne Bleuse"
-                    title_color="#a76a53"
-                    place_and_time="10h - Pierre Giret - Sainte-Foy Tarentaise"
-                    musique_style="Piano et clavecin, une invitation au voyage"
-                    description="La pianiste vagabonde Jeanne Bleuse se lance dans un seul en scène original et virtuose qui renouvelle le récital classique. S’amusant avec les codes du genre, la soliste passe du piano au clavecin, dans un vrai numéro de cirque musical. Jeanne Bleuse nous transporte des confins de la renaissance aux rivages modernes grâce aux plus belles pages du répertoire. De Mozart à Satie et Rameau, en passant par les rythmes flamenco de Falla, le jazz langoureux de Gershwin… jusqu'aux compositeurs d’aujourd'hui."
-                    listenLink="https://youtu.be/lacZV6nZ25g"
-                />
-            </div>
-            <p className="text-center pt-10 pb-8 text-2xl" style={{color: "grey"}}>Demi-journée champêtre aux Îles - Villaroger</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
-                <FestivalEventComponent
-                        image="etienne-dehors.webp"
-                        title="Sieste sonore"
+                <FestivalEventV2Component
+                        image="papanosh.webp"
+                        title="Le bal de Papanosh - jazz festif"
                         title_color="#a76a53"
-                        place_and_time="16h - Les Îles - Villaroger"
-                        musique_style="musique contemplative avec Thibault Gomez (piano, claviers, électronique), Etienne Renard (contrebasse) et Vincent Duchosal (guitares)"
-                        description="Une invitation à la contemplation sonore dans un havre naturellement paisible. Trois musiciens rompus à l’improvisation vont extraire de leurs instruments des sonorités insoupçonnées à faire frémir les oiseaux environnants, en toute décontraction. " />
-
-                <FestivalEventComponent
-                        image="crusoe.jpg"
-                        title='Robinson Khoury "Broken Lines" Quintet '
-                        title_color="#a76a53"
-                        place_and_time="20h - Les Îles - Villaroger"
+                        place_and_time="Salle polyvalente de Planjo (Sainte-Foy) <br><br> 19h ouverture, 20h début du concert <br> Restauration sur place"
                         musique_style="jazz d’aujourd’hui avec Robinson Khoury (trombone), Mark Priore (piano), Pierre Tereygeol (guitares), Etienne Renard (contrebasse), Elie Martin-Charrière (batterie)"
-                        description="Le tromboniste Robinson Khoury fait partie de ces figures remarquées très jeunes pour la singularité de leur jeu. Lauréat de nombreux prix et ayant collaboré sur la scène internationale avec, entres autres, Ibrahim Maalouf, Natacha Atlas, Quincy Jones orchestra, le tromboniste nous révèle ici les compositions d’un deuxième album, clair et pictural, accompagné d’acolytes non-moins talentueux.
-    Le Quintet Broken Lines crée sur scène un lien entre les courants de la peinture du début du XXème siècle (cubisme, minimalisme et abstraction) et le travail de composition jazzistique, afin d’obtenir un résultat qui associe les couleurs aux modes musicaux, et les formes géométriques aux formules rythmiques, tout cela avec une énergie propre au dialogue entre l'écriture et l’improvisation."
-                        listenLink="https://youtu.be/apPZVHuRpRY"
-                    />
-            </div>
-            <p className="p-6 text-4xl">Dimanche 14 Août</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
-                <FestivalEventComponent
-                    image="balade.webp"
-                    title="Marche du temps profond [BIS]"
-                    title_color="#a76a53"
-                    place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
-                    musique_style="Balade poético-scientifique avec Antoine Gonthier"
-                    description="Une promenade poético-scientifique de 2,3km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 2 millions d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
-                />
-                <FestivalEventComponent
-                    image="9m2.png"
-                    title="9m2 de banquise"
-                    title_color="#a76a53"
-                    place_and_time="13h - Le Fenil - Sainte Foy Tarentaise"
-                    musique_style="théâtre par Benjamin Groetzinger (comédien) et Clément Lemêtre (son)"
-                    description="Un jeune homme erre, attend et s’ennuie entre les murs de son 9m2. Enfermé de force ou incapable de sortir par lui-même ? Alors qu’il nous dévoile les objets qu’il affectionne, son habitation prend l’aspect d’une étonnante « banquise » … dont il doit prendre soin pour sauver le monde et se sauver lui-même.
-<br> Un spectacle entre fable écologique et rêverie surréaliste, dont les impressions visuelles et sonores invitent à imaginer sa propre histoire."
-                    listenLink="https://youtu.be/ZDLNU_cXkfA"
+                        description="Voilà 17 ans que ce quintet rompu à l'exercice jazzistique et féru d'influences et d'imaginaires tous azimuts se régale à faire danser le public avec ses grooves entêtants, ses chansons mexicaines et ses tarentelles endiablées. Pour le bal des Pantomines, les cinq compères invitent Amélie Affagard, maîtresse à danser et magicienne aux mille voix qui nous entraînera toute la nuit dans sa ronde. C’est la promesse de lendemains qui chantent et de mollets qui crampent. Pour reprendre leur expression, attendez-vous à “un sacré gueuleton” !
+                        <br><br>Un temps d’initiation à des danses de groupe sera proposé avant le concert."
+                        actors="Quentin Ghomari, trompette et chant ; Raphaël Quenehen, saxophones et chant ; Sebastien Palis, accordéon, Rhodes, chant ; Thibault Cellier, contrebasse ; Jérémie Piazza, batterie et Amélie Affagard, chant et danse"
+                        copyright={"Jacky Cellier"}
+                        image_position="top"
+
                 />
             </div>
-            <p className="p-6 mt-6 text-3xl text-center" style={{color: "grey"}}>GRAND BAL !</p>
-            <p className="pb-8 text-2xl text-center">19h - Ouverture du site et restauration sur place</p>
-            <p className="pb-8 text-2xl text-center" style={{color: "#a76a53"}}>Venez manger, guincher et trinquer à Planjo pour un Bal du 15 Août détonnant !</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
-
-                <FestivalEventComponent
-                    image="zozio.jpeg"
-                    title="ZOZIO"
+            <p className="p-6 text-4xl text-center">Dimanche 13 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
+                <FestivalEventV2Component
+                    image="louise_valette.webp"
+                    title="Louison Valette - danse contemporaine"
                     title_color="#a76a53"
-                    place_and_time="20h30"
-                    musique_style="concert dansant avec Climène Zarkan (voix, percussions, clavier) Romane Déconfin (accordéon, flûte, percussion et voix) Vincent Duchosal (guitare électrique, voix) Louis Prado (ukébasse et voix) Benoît Joblot (batterie et voix)"
-                    description="Nourri des musiques de La Réunion et d’ailleurs, Zozio puise son énergie dans les mélodies traditionnelles pour créer une musique originale, singulière, dansante, capable de faire remuer les plumes de tout oiseau de nuit souhaitant tanguer, piaffer, rouler, chavirer le temps d’une soirée…"
-                    listenLink="https://youtu.be/IakJ4wuInYY"
+                    place_and_time="11h - La Savinaz (commune de Villaroger)"
+                    description="La danseuse et chorégraphe présentera une création adaptée in situ, un solo en dialogue avec notre environnement sonore naturel ou artificiel. La danse part à la rencontre du diapason... Elle crée un espace d'écoute sonore et physique autour de l'orchestration de notre quotidien, de nos standards musicaux, de sensations intimes liées à la perception du son et des fréquences. Elle questionne ainsi notre corps quotidien, individuel et social. "
                 />
-                <FestivalEventComponent
-                    title="MixFigue MixRaisin"
+                <FestivalEventV2Component
+                    image="thimotee.webp"
+                    title="Timothée Quost, SEUL - solo de trompette"
                     title_color="#a76a53"
-                    place_and_time="22h"
-                    musique_style="DJ set éclectique et théâtral"
-                    description="Simon Teissier (platines, vinyles, jeu) nous concocte un set plein de surprise. Vous êtes plutôt Sun & Surf 70s, Disco paillettes 80s, Nouvelle vague 90s ... ?"
+                    place_and_time="17h30 - La Savinaz (Commune de Villaroger)"
+                    description="Trompettiste, compositeur et improvisateur, Timothée Quost a élaboré un solo singulier à partir de son instrument, évoluant au gré de concerts qu’on compte déjà par centaines. Amplifiée et augmentée électroniquement, la trompette sort ici de ses gonds. Le microphone et le haut-parleur permettent de révéler un monde sonore contenu dans le corps de l'instrument conduisant à une musique inouïe et prenante. Un solo qui déjoue nos attentes et notre écoute pour nous immerger dans une poésie sonore d'aujourd'hui."
+                    actors="Durée : 50mn"
+                    listenLink="https://youtu.be/UX8xBNrb978"
+                    image_position="top"
+
+                />
+                <FestivalEventV2Component
+                    image="sonore_boreale.webp"
+                    title="Sonore Boréale - théâtre musical"
+                    title_color="#a76a53"
+                    place_and_time="20h - Salle de la Gurraz (Commune de Villaroger)"
+                    description="Percussionniste explorateur des instruments du monde entier, Sylvain Lemêtre s’est constitué une table de percussions offrant un panel de jeu illimité qu’il nourrit de sa pratique de l’improvisation. Dans ce spectacle, cet instrumentarium étonnant prend vie à travers des contes chimériques aussi bien parlés que percutés. Tambours brésiliens, chinois, malgaches, bois de tout feu, métaux d’Asie en cloches, en plaques, en tubes, en lames s’entremêlent et dialoguent avec les mots extraits du livre « La Funghimiracolette » d’Olivier Mellano. Ce solo intimiste, drôle et haut en couleur sonore, nous embarque dans un voyage fabuleux ! "
+                    actors="Durée : 1h"
+                    listenLink="https://www.youtube.com/watch?v=G1uIjjNltNs&ab_channel=SylvainLem%C3%AAtre"
+                    copyright={"Rémi Angeli"}
+                    image_position="top"
+
+                />
+
+                <p className="p-6 text-2xl text-center text-bold">Une buvette et une petite restauration seront servies à la Gurraz entre les deux concerts
+                </p>
+
+            </div>
+            <p className="p-6 text-4xl text-center">Lundi 14 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
+                <FestivalEventV2Component
+                    image="vaguent.webp"
+                    title="Vaguent - ambient"
+                    title_color="#a76a53"
+                    place_and_time="16h - Clairière des Îles (accès depuis le parking du Champet situé le long de la D902 entre Viclaire et Sainte-Foy)"
+                    description="Contemplative, aérienne, cyclique, la musique de Vaguent se nourrit de motifs minimalistes et de textures de son. Portant l’accent sur une musique résolument chambriste, le quintet joue avec les mélanges de timbres et façonne ainsi des espaces à l'intérieur desquels les repères sonores se troublent. Les formes étirées et brumeuses révèlent alors de somptueux paysages quand d’autres créent des refuges chaleureux où se blottir."
+                    actors="Avec Axel Gaudron - bugle, organetta, composition ; Léa Ciechelski - saxophone alto, flûte alto ; Yurie Hu - violon, alto ; Thibaud Boustany - piano ; Adrien Desse - percussions, synthétiseur modulaire. "
+                    listenLink="https://www.youtube.com/watch?v=MSBmO2lAxTs"
+                    copyright={"Rémi"}
+                />
+                <FestivalEventV2Component
+                    image="los_hermanos.webp"
+                    title="Los Hermanos Pouyé - chansons d’Amérique latine"
+                    title_color="#a76a53"
+                    place_and_time="20h - Clairière des Îles (accès depuis le parking de Champet situé le long de la D902 entre Viclaire et Sainte-Foy)"
+                    description="Les trois frères Franco-Argentins et leurs acolytes rapportent d’Amérique du sud des milongas et autres chansons traditionnelles. Passant d'une veine intimiste à des pièces résolument festives, ils les accompagnent de compositions originales avec lesquelles les rythmes latino-américains se parent de nouvelles couleurs. Formant un ensemble puissamment expressif, les six musiciens partagent leur passion avec une irrésistible générosité. Attendez-vous à un moment de fête et d’émotion unique !"
+                    actors="Avec Thomas Pouyé - violon, Gaspar Pouyé - bandonéon, Jean Pouyé - guitare, Elie Delphin - violon, Louis Prado - contrebasse, Pablo Costadone - batterie."
+                    listenLink="https://youtu.be/003m_hjiDdU"
+                    image_position="top"
                 />
             </div>
-            <p className="p-6 text-xl text-center" style={{color: "grey"}}>Fermeture du site à 00h30</p>
-            <p className="p-6 text-4xl">Lundi 15 Août</p>
-                <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
-                <FestivalEventComponent
-                    title="Radio Crochet + Grand Banquet"
+            <p className="p-6 text-4xl text-center">Mardi 15 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
+                <FestivalEventV2Component
+                    title="Radio-Crochet - karaoké de variété"
                     title_color="#a76a53"
-                    place_and_time="11h - place du chef-lieu - Villaroger"
-                    musique_style="Radio Crochet avec l'orchestre des Pantomines"
-                    description="Ouvert à toutes et tous <br>
-Venez chanter une ou plusieurs chansons de votre choix accompagnés par les musiciens des Pantomines avec un repas en banquet. <br><br>
-<b>> Inscrivez-vous !</b> <br><br>
-Nous pouvons organiser des répétitions avant la date."
+                    place_and_time="12h30 Place de l’église de Villaroger - Restauration sur place"
+                    description="Date oblige, cette dernière journée prendra naturellement des airs de fête de village, avec un grand banquet et un radio crochet (karaoké) accompagné de musiciens aguerris ! Chacun et chacune est invité à monter sur scène pour nous chanter sa plus belle chanson, devant un public déjà conquis !! <br>
+Vous pourrez vous inscrire pendant toute la durée du festival. De Nougaro à Stromae, en passant par France Gall, une liste gargantuesque vous permettra de trouver votre titre favori !"
                 />
-                <FestivalEventComponent
-                    image="ispolin.jpeg"
-                    title="Trio Ispolin"
+                <FestivalEventV2Component
+                    image="terra_mare.webp"
+                    title="Terra Mare - folk"
                     title_color="#a76a53"
-                    place_and_time="15h - église de Villaroger"
-                    musique_style="voix bulgares avec Diane Bucciali, Camille Mandleur, Christine Clément (voix et percussions)"
-                    description="<b>Clôture du Festival des Pantomines 2022</b><br>
-                    Le trio tire son nom d’une légende : celle des Ispolin. Ces géants auraient peuplé la Bulgarie avant les premiers Hommes. Grâce à leur voix puissante, ils conversaient et entonnaient des chants d’une montagne à l’autre.
-Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géants en insufflant à des morceaux centenaires l'air contemporain qu'elles respirent.
-<br>Une odyssée polyphonique poignante entre tradition et pulsion de création."
-                    listenLink="https://youtu.be/q7w7G4xFXZQ"
+                    place_and_time="15h - Église de Villaroger"
+                    description="Auteur-compositeur originaire des Alpes du Nord, Paolo Gauthier se consacre avec tendresse à l’écriture de chansons. Son solo guitare-voix Terra Mare est une échappée folk, née de la pratique de la marche et éprouvée lors de tournées de chapelles en églises, à l'écoute du vent et de l'échos. Dans une langue vibrante et poétique, il trace de manière instinctive les émotions mystérieuses qu’éveillent l’amour, la montagne, la mer, le départ, le retour. Rassembleuse, sa folk nous entraîne dans son vague-à-l'âme presque incantatoire, sa poésie de l'errance et des retrouvailles. "
+                    actors="Durée : 1h"
+                    listenLink="https://youtu.be/Il8Eu1ChA4M"
+                    image_position="top"
                 />
             </div>
-
-
-            <p className="text-xl underline text-center mt-8 mb-8 pl-4 pr-4">
-                <a className="p-4 inline-flex" style={{backgroundColor: "#242424", color: "white"}} href="/documents/programme2022.pdf" target="_blank" rel="noreferrer">Télécharger le programme</a>
-            </p>
-
 
             <p className="text-2xl mb-6 text-center mt-16 italic" style={{color: "grey"}}>
                 Infos pratiques
@@ -193,11 +190,13 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4">
-                Le Festival des Pantomines est réalisé avec l’aide de la Communauté de Commune de Haute-Tarentaise, des Communes de Villaroger et de Sainte Foy et du département de la Savoie.
+                Un événement organisé par le collectif Mineurs de fond avec le soutien des Communes de Villaroger et Sainte-Foy, de la Communauté de communes de Haute-Tarentaise et du Département de la Savoie.
             </p>
 
-            <p className="text-center mt-16 mb-8 pl-4 pr-4 underline">
-                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2021" target="_blank" rel="noreferrer">Le programme de l'édition précédente</a>
+            <p className="text-center mt-16 mb-8 pl-4 pr-4">
+                Les programmes des éditions précédentes : <br/>
+                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2022" target="_blank" rel="noreferrer">Pantomines 2022</a> <br/>
+                <a style={{color: "#a76a53"}} href="festival-des-pantomines-2021" target="_blank" rel="noreferrer">Pantomines 2021</a>
             </p>
 
 

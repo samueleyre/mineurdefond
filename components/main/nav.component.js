@@ -101,8 +101,12 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
 
     const editions_nav = [
         {
-            name: "Edition 2022",
+            name: "Edition 2023",
             link: '/festival-des-pantomines'
+        },
+        {
+            name: "Edition 2022",
+            link: '/festival-des-pantomines-2022'
         },
         {
             name: "Edition 2021",

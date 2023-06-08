@@ -4,29 +4,25 @@ export default function FestivalEventV2Component(
     image=null,
     title,
     title_color = "black",
-    place_and_time,
-    musique_style,
+    place_and_time = null,
+    actors = null,
     link,
     newPage = null,
     description = "",
     listenLink = null,
     fbEvent = null,
     copyright=null,
+    image_position = "middle",
   }
 ) {
     return (
-        <div className="m-6" style={{width: "1024px", maxWidth: "100%"}}>
+        <div className="m-6 mb-12" style={{width: "1024px", maxWidth: "100%"}}>
             { image ?
                     <div
+                        className="festival-event-image"
                         style={{
-                            width: "1024px",
-                            maxWidth: "100%",
-                            height: "500px",
                             backgroundImage: `url(/images/${image})`,
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "bottom",
-                            margin: "auto"
+                            backgroundPosition: image_position,
                         }}
                     />
                 : ""
@@ -39,13 +35,18 @@ export default function FestivalEventV2Component(
             <a href={link} target={newPage ? "_blank" : "_self"} rel="noreferrer" style={link ? {cursor: "pointer"} : {cursor: "default"}}>
                 <h5 className="text-4xl pt-4 pb-4 font-bold" style={{color: title_color}}>{title}</h5>
             </a>
-            <p>{place_and_time}</p>
-            <p className="italic pt-1" style={{color: "grey"}}>{musique_style}</p>
-            <p className="pt-4" dangerouslySetInnerHTML={{__html: description}}>
-            </p>
-            <div className="flex flex-col items-center justify-center">
+            { place_and_time ?
+                <p className="font-bold" dangerouslySetInnerHTML={{__html: place_and_time}}></p>
+                : ""
+            }
+            <p className="pt-4" dangerouslySetInnerHTML={{__html: description}}></p>
+            { actors ?
+                <p className="italic pt-6" style={{color: "grey"}}>{actors}</p>
+                : ""
+            }
+            <div className="pt-8">
               { listenLink ?
-                <a className="underline mt-4" target="_blank" rel="noreferrer" href={listenLink}>Écouter</a>
+                <a style={{ borderColor: "#a76a53", color: "#a76a53" }} className="underline p-4 border rounded-full" target="_blank" rel="noreferrer" href={listenLink}>Écouter</a>
                 : ""
                }
                { fbEvent ?

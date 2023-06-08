@@ -1,6 +1,7 @@
 @import "project_page";
 @import "story_page";
 @import "nav";
+@import "festival";
 
 @tailwind base;
 @tailwind components;
@@ -128,7 +129,7 @@ p, span, a, li {
   text-align: center;
 }
 
-@media (min-height: 767px) {
+@media (min-width: 767px) {
 
   .roche {
     filter: brightness(0);
