@@ -1,60 +1,69 @@
 import ProjectRockComponent from "../components/project/project-rock.component";
 import ProjectLayoutComponent from "../components/project/project-layout.component";
 import FestivalEventComponent from "../components/festival/festival-event.component";
+import FestivalEventV2Component from "../components/festival/festival-event-v2.component";
 
 
 function FestivalDesPantomines() {
     return <>
         <ProjectRockComponent title="Le festival des Pantomines"
-                              meta_description="Du 12 au 15 août 2022 à Villaroger et Sainte-Foy en Savoie">
-            <div className="m-auto">
+                              meta_description="Du 11 au 15 août 2023 à Villaroger et Sainte-Foy en Savoie">
+            <div className="desktop-only m-auto">
+                <img style={{filter: "brightness(1.3)"}} width="320px" src="images/festival_des.webp" alt="Festival des pantomines"/>
+                <img style={{filter: "brightness(1.3)"}} width="400px" src="images/pantomines.webp" alt="Festival des pantomines"/>
+            </div>
+            <div className="mobile-only m-auto">
                 <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.webp" alt="Festival des pantomines"/>
                 <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.webp" alt="Festival des pantomines"/>
             </div>
 
         </ProjectRockComponent>
         <ProjectLayoutComponent>
-            <h1 className="text-4xl pt-2 mb-2 text-center italic" style={{color: "grey"}}>
-                Festival des pantomines, 12-13-14-15 Août 2022
+            <h1 className="text-5xl pt-2 mb-2 text-center" style={{color: "#050505"}}>
+                Festival des Pantomines - du 11 au 15 août 2023
             </h1>
-            <p className="text-xl mb-6 text-center italic" style={{color: "grey"}}>
-                en Savoie
+            <p className="text-xl mb-6 text-center italic" style={{color: "#656565"}}>
+                Une célébration artistique au cœur des Alpes
             </p>
-            <p className="text-xl pt-8 mb-8 pl-4 pr-4 bold">
-                Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 12 au 15 août pour faire vibrer les montagnes ! <br/><br/>
-                Sa programmation est cette année encore plus étoffée : 8 concerts, allant de la veillée intimiste au grand Bal populaire, une balade avec un guide poète-scientifique et bien sûr du théâtre, à chaque fois dans un site exceptionnel de la Haute-Tarentaise.
+            <p className="text-xl mb-1 text-center" style={{color: "#050505"}}>
+                A Villaroger et Saint Foy Tarentaise
             </p>
-            <p className="text-xl mb-8 pl-4 pr-4">
-                <span className="italic">Buvette sur place</span> <br/>
-                <span className="italic">Prix libre</span>
+            <p className="text-l mb-6 text-center italic" style={{color: "#656565"}}>
+                (Savoie - entre Bourg Saint Maurice et Val d’Isère)
+            </p>
+
+
+            <p className="text-xl pt-8 mb-6 pl-4 pr-4">
+                Le <b>Festival des Pantomines</b> est de retour du <b>11 au 15 août</b> sur les communes de Villaroger et Sainte-Foy-Tarentaise !
+                <br/><br/>
+                Pour cette <b>troisième édition</b>, retrouvez au programme pas moins de <b>10 concerts et spectacles</b> : certains festifs, d’autres contemplatifs, tous surprenants ! Allant du jazz aux musiques du monde, de la folk à la musique improvisée, du théâtre à la danse, nous passerons d'un versant à l'autre de la montagne et prendrons les chemins de traverse pour découvrir des musiques et des histoires à danser et à partager.
+            </p>
+            <p className="text-xl mb-12 pl-4 pr-4 italic">
+                Avec des concerts et spectacles en plein air, le Festival des Pantomines est un événement pour toutes et tous. Il invite à la découverte artistique à travers un parcours itinérant mettant à l’honneur les sites exceptionnels de la Haute-Tarentaise.
+            </p>
+            <p className="text-xl mb-8 pl-4 pr-4 text-center">
+                <span className="text-xl mb-0 pb-0" style={{color: "#656565"}}>★★★★★★★★★★★★★★★★★★★★ </span><br/>
+                <span className="pl-2 pr-2">Entrée à Prix libre  / Buvette sur place </span><br/>
+                <span className="text-xl" style={{color: "#656565"}}>★★★★★★★★★★★★★★★★★★★★ </span>
             </p>
             <br/>
             <br/>
             <p className="text-2xl mb-6 text-center mt-16 italic" style={{color: "grey"}}>
-                Programme
+                PROGRAMME
             </p>
-            <p className="p-6 text-4xl">Vendredi 12 Août</p>
-            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-18 sm:pr-18 flex flex-wrap justify-center">
+            <p className="p-6 text-4xl">Vendredi 11 Août</p>
+            <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 flex flex-wrap justify-center">
 
-                <FestivalEventComponent
+                <FestivalEventV2Component
                     image="balade.webp"
-                    title="Marche du temps profond"
+                    title="Le Petit Prince - théâtre tout public"
                     title_color="#a76a53"
                     place_and_time="9h30 - Parking du Chenal d’en bas - Sainte Foy Tarentaise"
                     musique_style="Balade poético-scientifique avec Antoine Gonthier"
                     description="Une promenade poético-scientifique de 2,3km pour se plonger dans l’histoire de notre planète depuis sa formation il y a environ 4,6Mds d’années jusqu’à aujourd’hui. Au rythme temporo-spatial d’1m pour 2 millions d’années, le conférencier présentera les grandes évolutions de la structure géologique et du climat de notre planète - une promenade qui, aussi paisible soit-elle, fait prendre conscience de l’ampleur et de la vitesse des changements en cours. <br><br> <b>Sur réservation</b>"
+                    copyright="J-P Dupraz"
                 />
 
-                <FestivalEventComponent
-                    image="jean-francois-vrod.jpeg"
-                    title="Veillée rustique moderne"
-                    title_color="#a76a53"
-                    place_and_time="20h - Salle des fêtes de La Gurraz - Villaroger"
-                    musique_style="Conte musicaux avec Jean-François Vrod"
-                    description="Violoniste parleur, Jean-François Vrod propose une version contemporaine de la veillée traditionnelle. <br>
-Seul avec son violon, il raconte comment il a découvert la tradition populaire, l’oralité, l’improvisation. Sa besace remplie de mélodies du répertoire traditionnel, de pièces composées, de processus d’improvisation, de morceaux choisis de littérature orale, et de textes de sa plume, il nous dévoile cette étonnante “matière” à travers son instrument."
-                    listenLink="https://youtu.be/yZ4C-3Ufeb4"
-                />
             </div>
             <p className="p-6 text-4xl">Samedi 13 Août</p>
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-28 sm:pr-28 flex flex-wrap justify-center">
@@ -180,7 +189,7 @@ Aujourd’hui, les trois chanteuses d'Ispolin réveillent l’écho de ces géan
             </p>
 
             <p className="text-center">
-                Vous pouvez suivre l'évènement sur <a className="underline" style={{color: "#a76a53"}} href="https://www.facebook.com/CollectifMineursdefond" target="_blank" rel="noreferrer">Facebook</a> et <a style={{color: "#a76a53"}} class="underline" href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank" rel="noreferrer">Instagram</a>
+                Vous pouvez suivre l'évènement sur <a className="underline" style={{color: "#a76a53"}} href="https://www.facebook.com/CollectifMineursdefond" target="_blank" rel="noreferrer">Facebook</a> et <a style={{color: "#a76a53"}} className="underline" href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank" rel="noreferrer">Instagram</a>
             </p>
 
             <p className="text-center mt-16 mb-8 pl-4 pr-4">
