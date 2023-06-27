@@ -75,6 +75,21 @@ function initMouseHallow() {
 
 
 export default function ExplorationComponent() {
+    const list = [["KLANG", "klang"], ["KOLM", "kolm"], ["Tchoukadane", "tchoukadane"], ["Thibault Gomez Quintet", "thibaultgomezquintet"], ["Zozio", "zozio"], ["Terra Mare", "terramare"], ["Madam RamDam", "madamramdam"]];
+
+    // randomize list
+    for (let i = list.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        if (Array.isArray(list[i])) {
+            const temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        } else {
+            const temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        }
+    }
     return (
         <>
 
@@ -87,51 +102,59 @@ export default function ExplorationComponent() {
                     </div>
                 </div>
                 <ExplorationProjectComponent
-                    title="KLANG"
+                    title={list[0][0]}
                     bottom="4"
                     right="-20"
                     depth="1"
-                    link="klang"
+                    link={list[0][1]}
                     rock="caillans"
                 />
                 <ExplorationProjectComponent
-                    title="KOLM"
+                    title={list[1][0]}
                     bottom="-20"
                     right="20"
                     depth="1"
-                    link="kolm"
+                    link={list[1][1]}
                     rock="minus"
                 />
                 <ExplorationProjectComponent
-                    title="Tchoukadane"
+                    title={list[2][0]}
                     bottom="-40"
                     right="-70"
                     depth="3"
-                    link="tchoukadane"
+                    link={list[2][1]}
                     rock="caillans"
                 />
                 <ExplorationProjectComponent
-                    title="Thibault Gomez Quintet"
+                    title={list[3][0]}
                     bottom="30"
                     right="70"
                     depth="3"
-                    link="thibaultgomezquintet"
+                    link={list[3][1]}
                     rock="minus"
                 />
                 <ExplorationProjectComponent
-                    title="Zozio"
+                    title={list[4][0]}
                     bottom="-40"
                     right="60"
                     depth="2"
-                    link="zozio"
+                    link={list[4][1]}
                     rock="minus"
                 />
                 <ExplorationProjectComponent
-                    title="Madam RamDam"
+                    title={list[5][0]}
+                    bottom="40"
+                    right="10"
+                    depth="2"
+                    link={list[5][1]}
+                    rock="minus"
+                />
+                <ExplorationProjectComponent
+                    title={list[6][0]}
                     bottom="30"
                     right="-60"
                     depth="2"
-                    link="madamramdam"
+                    link={list[6][1]}
                     rock="minus"
                 />
 

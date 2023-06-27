@@ -97,6 +97,10 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             name: "Thibault Gomez Quintet",
             link: '/thibaultgomezquintet'
         },
+        {
+            name: "Terra Mare",
+            link: '/terramare'
+        },
     ].filter((nav => nav.link !== router.pathname));
 
     const editions_nav = [
