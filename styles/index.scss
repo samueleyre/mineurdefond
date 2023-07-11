@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: cameo;
+  src: url(CameoSansDEMO.ttf);
+}
+
+
 @media (max-height: 767px) {
   * {
     -webkit-tap-highlight-color: transparent;
@@ -14,7 +20,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'cameo', cursive;
 }
 
 p, span, a, li {
@@ -48,13 +54,8 @@ p, span, a, li {
     width: 34rem;;
   }
 
-
-  .font-reggae {
-    font-family: 'Reggae One', cursive;
-  }
-
-  .font-amatic {
-    font-family: 'Amatic SC', cursive;
+  .font-cameo {
+    font-family: 'cameo', cursive;
   }
 
   .fade-in {

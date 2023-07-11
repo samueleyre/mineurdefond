@@ -16,7 +16,7 @@ export default function ProjectRockComponent({title, bgMobileClass="bg-white", d
                         {children ?
                             children :
                                 <>
-                                    <h1 className="font-amatic sm:pr-32 sm:pl-32 pt-5 pb-5 text-center text-7xl text-gradient-color">{title}</h1>
+                                    <h1 className="font-cameo sm:pr-32 sm:pl-32 pt-5 pb-5 text-center text-7xl text-gradient-color">{title}</h1>
                                     <p className="mobile:pl-5 mobile:pr-5 sm:pr-32 sm:pl-32 pt-1 pb-1 text-center text-xl text-white">{description}</p>
                                 </>
                         }

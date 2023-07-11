@@ -6,8 +6,7 @@ export default function HeadComponent({title, meta_description = "Le collectif d
         <title>Mineurs de fond {title ? "|" : "" } {title}</title>
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
         <meta
             name="description"
             content= {meta_description}

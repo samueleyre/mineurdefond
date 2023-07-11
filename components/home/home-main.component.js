@@ -84,7 +84,7 @@ export default function HomeMainComponent() {
                     </g>
                 </svg>
 
-                <span className="pl-6 font-amatic">Explorez la mine</span>
+                <span className="pl-6 font-cameo">Explorez la mine</span>
             </div>
             <div className="homepage-footer flex items-end">
                 <div className="w-full bg-cover" style={{height: "100%", backgroundImage: 'url("images/bottom_rock.webp")'}}>
