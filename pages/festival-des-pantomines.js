@@ -6,18 +6,14 @@ import FestivalEventV2Component from "../components/festival/festival-event-v2.c
 function FestivalDesPantomines() {
     return <>
         <ProjectRockComponent title="Le festival des Pantomines"
-                              meta_description="Du 11 au 15 août 2023 à Villaroger et Sainte-Foy en Savoie">
-            <div className="desktop-only m-auto">
-                <img style={{filter: "brightness(1.3)"}} width="320px" src="images/festival_des.webp" alt="Festival des pantomines"/>
-                <img style={{filter: "brightness(1.3)"}} width="400px" src="images/pantomines.webp" alt="Festival des pantomines"/>
-            </div>
-            <div className="mobile-only m-auto">
-                <img style={{filter: "brightness(1.3)"}} width="240px" src="images/festival_des.webp" alt="Festival des pantomines"/>
-                <img style={{filter: "brightness(1.3)"}} width="300px" src="images/pantomines.webp" alt="Festival des pantomines"/>
-            </div>
-
+                              meta_description="Du 11 au 15 août 2023 à Villaroger et Sainte-Foy en Savoie"
+                              image_name="fest_top_2023.png"
+                              bgMobileClass="mobile:bg-gradient-to-t mobile:from-e1ebee mobile:from-60% mobile:to-black mobile:to-70% md:bg-e1ebee"
+                              bgMobile="linear-gradient(0deg, rgba(225,235,238,1) 0%, rgba(225,235,238,1) 47%, rgba(0,0,0,1) 61%, rgba(0,0,0,1) 100%)"
+        >
+            <div></div>
         </ProjectRockComponent>
-        <ProjectLayoutComponent>
+        <ProjectLayoutComponent bgColor="#e1ebee" >
             <h1 className="text-5xl pt-2 mb-2 text-center" style={{color: "#050505"}}>
                 Festival des Pantomines - du 11 au 15 août 2023
             </h1>
@@ -203,7 +199,7 @@ Vous pourrez vous inscrire pendant toute la durée du festival. De Nougaro à St
 
 
         </ProjectLayoutComponent>
-        <img alt="festival image" src="/images/fest_bot.webp" width="100%" />
+        <img alt="festival image" style={{backgroundColor: "#e1ebee" }} src="/images/fest_bot_2023.png" width="100%" />
 
     </>
 }
