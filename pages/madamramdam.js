@@ -36,10 +36,10 @@ function Madamramdam() {
                 <img style={{width: "500px"}} className="max-w-full" src="images/maDamRamDam_groupe.jpg" alt="Affiche de Tel un lys parmi les épines…"/>
             </div>
             <div className="flex flex-wrap pt-16 pd-4 justify-around">
-                <p className="text-3xl font-cameo">
+                <p className="text-3xl font-amatic">
                     » Pour mieux digérer, danser ! «
                 </p>
-                <p className="text-3xl font-cameo">
+                <p className="text-3xl font-amatic">
                     « Jukebox-Sans-Frontières »
                 </p>
             </div>

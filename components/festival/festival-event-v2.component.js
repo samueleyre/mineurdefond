@@ -3,7 +3,9 @@ export default function FestivalEventV2Component(
   {
     image=null,
     title,
+    title_font = "font-amatic",
     title_color = "black",
+    title_capital = "capitalize",
     place_and_time = null,
     actors = null,
     link,
@@ -13,6 +15,7 @@ export default function FestivalEventV2Component(
     fbEvent = null,
     copyright=null,
     image_position = "middle",
+  duration = null,
   }
 ) {
     return (
@@ -33,7 +36,7 @@ export default function FestivalEventV2Component(
             }
 
             <a href={link} target={newPage ? "_blank" : "_self"} rel="noreferrer" style={link ? {cursor: "pointer"} : {cursor: "default"}}>
-                <h5 className="text-4xl pt-4 pb-4 font-bold" style={{color: title_color}}>{title}</h5>
+                <h5 className={"text-4xl pt-4 pb-4 font-bold " + title_font} style={{color: title_color}}>{title}</h5>
             </a>
             { place_and_time ?
                 <p className="font-bold" dangerouslySetInnerHTML={{__html: place_and_time}}></p>
@@ -42,6 +45,10 @@ export default function FestivalEventV2Component(
             <p className="pt-4" dangerouslySetInnerHTML={{__html: description}}></p>
             { actors ?
                 <p className="italic pt-6" style={{color: "grey"}}>{actors}</p>
+                : ""
+            }
+            { duration ?
+                <p className="italic pt-6" style={{color: "grey"}}>Durée : {duration}</p>
                 : ""
             }
             <div className="pt-8">

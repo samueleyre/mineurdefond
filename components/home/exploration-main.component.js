@@ -98,7 +98,7 @@ export default function ExplorationComponent() {
                 <div className="layer fonds mobile:hidden" data-depth="0"
                      style={{backgroundImage: "url(/images/exploration_bg.jpeg)"}}>
                     <div className="returnLink">
-                        <a className="font-cameo text-4xl" href="/">Accueil</a>
+                        <a className="font-amatic text-4xl" href="/">Accueil</a>
                     </div>
                 </div>
                 <ExplorationProjectComponent
