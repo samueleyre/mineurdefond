@@ -13,7 +13,8 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
         e1ebee: '#E1EBEE',
-        fest2023: "#774091"
+        fest2023: "#4f80c1",
+        774091: "#774091"
       },
       spacing: {
         28: '7rem',

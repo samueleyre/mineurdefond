@@ -91,7 +91,7 @@ export default function HomeMainComponent() {
                     <div style={{paddingTop: "10rem"}} className="text-5xl pl-10 pr-10 text-white pb-10">
                         <a className="font-cameo text-fest2023" href="/festival-des-pantomines">
                             <div style={{width: "300px"}}>
-                                Festival des Pantomines
+                                FESTIVAL DES PANTOMINES
                             </div>
                         </a>
                         <div className="mt-10">

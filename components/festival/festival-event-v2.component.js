@@ -4,8 +4,10 @@ export default function FestivalEventV2Component(
     image=null,
     second_image=null,
     title,
+    subtitle = null,
     title_font = "font-amatic",
     title_color = "black",
+    subtitle_color = "grey",
     title_capital = "capitalize",
     place_and_time = null,
     actors = null,
@@ -62,6 +64,10 @@ export default function FestivalEventV2Component(
             <a href={link} target={newPage ? "_blank" : "_self"} rel="noreferrer" style={link ? {cursor: "pointer"} : {cursor: "default"}}>
                 <h5 className={"text-4xl pt-4 pb-4 font-bold " + title_font} style={{color: title_color}}>{title}</h5>
             </a>
+            { subtitle ?
+              <h6 className={"text-2xl pt-4 pb-4 font-bold " + title_font} style={{color: subtitle_color}}>{subtitle}</h6>
+              : ""
+            }
             { place_and_time ?
                 <p className="font-bold" dangerouslySetInnerHTML={{__html: place_and_time}}></p>
                 : ""

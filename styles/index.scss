@@ -235,10 +235,33 @@ p, span, a, li {
   height: auto;
 }
 
+@media (min-width: 768px) {
+    .homepage-explore > svg {
+        width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .homepage-explore > svg {
+        width: 140px;
+    }
+}
+
 .homepage-explore > span {
   top: 66px;
   left: 20px;
-  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .homepage-explore > span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage-explore > span {
+    font-size: 24px;
+  }
 }
 
 .homepage-explore > svg .light-beam {
@@ -264,13 +287,20 @@ p, span, a, li {
 
 @media (max-width: 767px) {
   .homepage-footer {
-    padding-top: calc(100vh - 560px);
+    padding-top: calc(45vh - 358px);
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .homepage-explore {
     position: absolute;
+    padding-top: 55vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage-explore {
+    padding-top: 32vh;
   }
 }
 
