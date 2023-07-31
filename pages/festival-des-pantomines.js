@@ -153,7 +153,7 @@ histoires locales.
                 <FestivalEventV2Component
                     image="vaguent.webp"
                     title="Vaguent"
-                    subtitle={"musique contemporaine"}
+                    subtitle={"musique contemplative"}
                     title_font="font-cameo"
                     title_color="#774091"
                     place_and_time="16h - Le Champet, clairière des Îles <br> (accès depuis l'aire de chaînage située le long de la D902 entre Viclaire et Sainte-Foy)"
