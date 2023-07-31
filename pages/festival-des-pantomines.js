@@ -14,7 +14,7 @@ function FestivalDesPantomines() {
         </ProjectRockComponent>
         <ProjectLayoutComponent bgColor="#e1ebee" >
             <h1 className="font-cameo text-5xl pt-2 mb-2 text-center" style={{color: "#050505"}}>
-                Du 11 au 15 août 2023
+                Du 11 Au 15 Août 2023
             </h1>
             <p className="text-xl mb-6 text-center italic" style={{color: "#656565"}}>
                 Une célébration artistique au cœur des Alpes
@@ -54,8 +54,8 @@ function FestivalDesPantomines() {
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
 
                 <FestivalEventV2Component
-                    image="petit_prince_2.jpg"
-                    second_image="petit_prince_1.jpg"
+                    image="petit_prince_2.webp"
+                    second_image="petit_prince_1.webp"
                     title="Le Petit Prince"
                     subtitle="théâtre tout public"
                     subtitle_color="grey"
