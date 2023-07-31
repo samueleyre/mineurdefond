@@ -2,6 +2,7 @@
 export default function FestivalEventV2Component(
   {
     image=null,
+    second_image=null,
     title,
     title_font = "font-amatic",
     title_color = "black",
@@ -15,19 +16,42 @@ export default function FestivalEventV2Component(
     fbEvent = null,
     copyright=null,
     image_position = "middle",
-  duration = null,
+    second_image_position = "middle",
+    duration = null,
   }
 ) {
     return (
         <div className="m-6 mb-12" style={{width: "1024px", maxWidth: "100%"}}>
-            { image ?
+            { image && !second_image ?
                     <div
-                        className="festival-event-image"
+                        className="festival-event-image m-auto"
                         style={{
                             backgroundImage: `url(/images/${image})`,
                             backgroundPosition: image_position,
                         }}
                     />
+                : ""
+            }
+            { second_image && image ?
+                <div
+                  className="flex justify-between"
+                >
+                  <div
+                      className="festival-event-image mr-4"
+                      style={{
+                          backgroundImage: `url(/images/${image})`,
+                          backgroundPosition: image_position,
+                      }}
+                  />
+                  <div
+                      className="festival-event-image"
+                      style={{
+                          backgroundImage: `url(/images/${second_image})`,
+                          backgroundPosition: second_image_position,
+                      }}
+                  />
+                </div>
+
                 : ""
             }
             { copyright ?

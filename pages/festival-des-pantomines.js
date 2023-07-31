@@ -47,7 +47,8 @@ function FestivalDesPantomines() {
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
 
                 <FestivalEventV2Component
-                    image="petit_prince.webp"
+                    image="petit_prince_2.jpg"
+                    second_image="petit_prince_1.jpg"
                     title="Le Petit Prince - théâtre tout public"
                     title_capital="small"
                     title_font="font-cameo"
@@ -56,7 +57,8 @@ function FestivalDesPantomines() {
                     actors="Emile Bailly et Pauline Drach, jeu ; Benjamin Groetzinger (Compagnie Démembrée), mise en scène ; Tom Georgel, création musicale"
                     description={"Dans un théâtre de verdure, le personnage d’Antoine de Saint-Exupéry prend vie avec une clairvoyance et une profondeur intactes. À travers une mise en scène en résonance avec le monde agricole et son rapport au vivant, il réveille avec sa poésie virulente l'enfant resté en chacun de nous, révolté face à l'absurdité du monde et la folie \"des grandes personnes\". Avec une magnifique création musicale, cette adaptation respecte le texte original tout en déplaçant son univers en terre agricole pour mieux interroger, à la faveur du crépuscule, notre monde contemporain."}
                     copyright="J-P Dupraz"
-                    image_position="top"
+                    image_position="center"
+                    second_image_position="top"
                     duration="1h"
 
                 />
@@ -99,6 +101,7 @@ histoires locales.
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
                 <FestivalEventV2Component
                     image="louise_valette.webp"
+                    second_image="timothee.webp"
                     title="Louison Valette  x  Timothée Quost"
                     title_font="font-cameo"
                     title_color="#a76a53"
@@ -114,6 +117,7 @@ histoires locales.
                     "
                     listenLink="https://youtu.be/UX8xBNrb978"
                     image_position="top"
+                    second_image_position="left"
                     duration="1h30"
                 />
                 <p className="text-2xl text-bold pb-12">Pour poursuivre, une buvette et une petite restauration seront servies à la Gurraz à partir de 18h30.
