@@ -20,7 +20,7 @@ function FestivalDesPantomines() {
                 Une célébration artistique au cœur des Alpes
             </p>
             <p className="text-xl mb-1 text-center" style={{color: "#050505"}}>
-                A Villaroger et Saint Foy Tarentaise
+                A Villaroger et Sainte-Foy-Tarentaise
             </p>
             <p className="text-l mb-6 text-center italic" style={{color: "#656565"}}>
                 (Savoie - entre Bourg Saint Maurice et Val d’Isère)
@@ -181,6 +181,7 @@ histoires locales.
             <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
                 <FestivalEventV2Component
                     title="Banquet - Radio-Crochet"
+                    image={"radio_crochet.webp"}
                     subtitle="repas où vous chantez !"
                     title_font="font-cameo"
                     title_color="#774091"

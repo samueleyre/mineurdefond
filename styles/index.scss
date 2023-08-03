@@ -13,7 +13,7 @@
 }
 
 
-@media (max-height: 767px) {
+@media (max-width: 767px) {
   * {
     -webkit-tap-highlight-color: transparent;
   }
@@ -165,7 +165,7 @@ p, span, a, li {
   }
 }
 
-@media (max-height: 767px) {
+@media (max-width: 767px) {
   .roche {
     &[data-depth="3"], &[data-depth="3"] .roche-img {
       width: 100px;
