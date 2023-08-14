@@ -156,7 +156,7 @@ histoires locales.
                     subtitle={"musique contemplative"}
                     title_font="font-cameo"
                     title_color="#774091"
-                    place_and_time="16h - Le Champet, clairière des Îles <br> (accès depuis l'aire de chaînage située le long de la D902 entre Viclaire et Sainte-Foy)"
+                    place_and_time="16h - Le Champet, clairière des Îles - Repli à la salle de Planjo (Sainte-Foy-Tarentaise) <br> (accès depuis l'aire de chaînage située le long de la D902 entre Viclaire et Sainte-Foy)"
                     description="Aérienne et cyclique, la musique de Vaguent se nourrit de motifs minimalistes et de textures de son. Portant l’accent sur une musique résolument chambriste, le quintet joue avec les mélanges de timbres et façonne ainsi des espaces à l'intérieur desquels les repères sonores se troublent. Les formes étirées et brumeuses révèlent alors de somptueux paysages quand d’autres créent des refuges chaleureux où se blottir."
                     actors="Avec Axel Gaudron - bugle, organetta, composition ; Léa Ciechelski - saxophone alto, flûte alto ; Yurie Hu - violon, alto ; Thibaud Boustany - piano ; Adrien Desse - percussions, synthétiseur modulaire. "
                     listenLink="https://www.youtube.com/watch?v=MSBmO2lAxTs"
@@ -169,7 +169,7 @@ histoires locales.
                     subtitle={"musique argentine"}
                     title_font="font-cameo"
                     title_color="#774091"
-                    place_and_time="20h - Le Champet, clairière des Îles <br> (accès depuis l'aire de chaînage située le long de la D902 entre Viclaire et Sainte-Foy)"
+                    place_and_time="20h - Le Champet, clairière des Îles - Repli à la salle de Planjo (Sainte-Foy-Tarentaise) <br> (accès depuis l'aire de chaînage située le long de la D902 entre Viclaire et Sainte-Foy)"
                     description="Les trois frères Franco-Argentins et leurs acolytes rapportent d’Amérique du sud des milongas et autres chansons traditionnelles. Passant d'une veine intimiste à des pièces résolument festives, ils les accompagnent de compositions originales avec lesquelles les rythmes latino-américains se parent de nouvelles couleurs. Formant un ensemble puissamment expressif, les six musiciens partagent leur passion avec une irrésistible générosité. Attendez-vous à un moment de fête et d’émotion unique !"
                     actors="Avec Thomas Pouyé - violon, Gaspar Pouyé - bandonéon, Jean Pouyé - guitare, Elie Delphin - violon, Louis Prado - contrebasse, Pablo Costadone - batterie."
                     listenLink="https://youtu.be/003m_hjiDdU"
