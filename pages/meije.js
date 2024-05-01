@@ -105,7 +105,7 @@ export default class Meije extends Component {
                          alt="Photo du groupe Meije"/>
                 </div>
                 {
-                    this.nextEvents.length > 0 ?
+                    this.pastEvents.length > 0 ?
                         <h2 className="text-2xl font-amatic text-center mb-8 mt-8">
                             « Dates Passées »
                         </h2>
