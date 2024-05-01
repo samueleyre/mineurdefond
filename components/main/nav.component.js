@@ -104,7 +104,7 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
         {
             name: "Meije",
             link: '/meije'
-        },
+        }
     ].filter((nav => nav.link !== router.pathname));
 
     const editions_nav = [

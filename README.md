@@ -1,28 +1,32 @@
-# A statically generated blog example using Next.js and Airtable
+# Site web de l'association Mineurs de fond
 
+# Variable d'environnement
 
-# Step 1. Set up environment variables
-
-Copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
+Copier le fichier `.env.local.example` dans ce répertoire en `.env.local`
 
 ```bash
 cp .env.local.example .env.local
 ```
 
-### Step 2. Run Next.js in development mode
+### Installation
 
 ```bash
 yarn install
-yarn dev
+yarn build
 ```
 
-It should be up and running on [http://localhost:3000](http://localhost:3000)!
+### Lancer le serveur de développement
 
-### Step 3. Deploy on Vercel
+```bash
+yarn start
+```
 
-#### Deploy Your Local Project
+Il devrait être en cours d'exécution sur [http://localhost:3000](http://localhost:3000)!
 
-To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and import to vercel.
 
-**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
+### Convertir les images en webp
+
+```bash
+./convert_to_webp.sh
+```
 

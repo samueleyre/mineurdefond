@@ -84,19 +84,19 @@ export default function HomeMainComponent() {
                     </g>
                 </svg>
 
-                <span className="pl-6 font-amatic">Explorez la mine</span>
+                <span className="pl-6 font-cameo">Explorez La Mine</span>
             </div>
             <div className="homepage-footer flex items-end">
                 <div className="w-full bg-cover" style={{height: "100%", backgroundImage: 'url("images/bottom_rock.webp")'}}>
-                    <div style={{paddingTop: "10rem"}} className="text-5xl pl-10 pr-10 text-white pb-10">
+                    <div style={{paddingTop: "11rem"}} className="text-5xl pl-10 pr-10 text-white pb-10">
                         <a className="font-cameo text-fest2023" href="/festival-des-pantomines">
                             <div style={{width: "300px"}}>
                                 FESTIVAL DES PANTOMINES
                             </div>
                         </a>
                         <div className="mt-10">
-                            <p className="text-xl md:pr-40" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 11 au 15 août pour faire vibrer les montagnes !</p>
-                            <a className="mobile:text-3xl sm:text-4xl underline" href="/festival-des-pantomines">Voir le programme !</a>
+                            <p className="text-xl md:pr-40 mb-4" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 11 au 15 août pour faire vibrer les montagnes !</p>
+                            <a className="font-cameo mobile:text-3xl sm:text-4xl button-rock-1" href="/festival-des-pantomines">VOIR le PROGRAMME !</a>
                         </div>
                     </div>
                 </div>
