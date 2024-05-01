@@ -407,10 +407,10 @@ acorn@^8.8.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
-airtable@^0.11.5:
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.11.5.tgz#eeac9b4bc7fef30663ca2c40153f7587920c2e02"
-  integrity sha512-/fqPA5BZTn5K0J636CfVuyGdNyV6t5RbBDPUBASlb/mlWSJj8WcF9O7/R+BuAlGMsSiKqR9dll99srcQcLEQjg==
+airtable@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.12.2.tgz#e53e66db86744f9bc684faa58881d6c9c12f0e6f"
+  integrity sha512-HS3VytUBTKj8A0vPl7DDr5p/w3IOGv6RXL0fv7eczOWAtj9Xe8ri4TAiZRXoOyo+Z/COADCj+oARFenbxhmkIg==
   dependencies:
     "@types/node" ">=8.0.0 <15"
     abort-controller "^3.0.0"
