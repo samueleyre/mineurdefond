@@ -3,27 +3,27 @@ import ExplorationProjectComponent from "./exploration-project.component";
 
 
 if (document.readyState === "complete") {
-  setTimeout(()=> {
-    init();
-  }, 2000);
+    setTimeout(() => {
+        init();
+    }, 2000);
 }
 
-window.addEventListener("load", function(){
-  init();
+window.addEventListener("load", function () {
+    init();
 });
 
 function init() {
 
-  const parent = document.getElementById('exploration');
+    const parent = document.getElementById('exploration');
 
-  new Parallax(parent, {
-      invertX: true,
-      invertY: true,
-      limitX: 26,
-      limitY: 5,
-  });
+    new Parallax(parent, {
+        invertX: true,
+        invertY: true,
+        limitX: 26,
+        limitY: 5,
+    });
 
-  initMouseHallow();
+    initMouseHallow();
 
 }
 
@@ -32,7 +32,7 @@ function init() {
  */
 function mouseMove(e) {
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return;
     }
 
@@ -73,9 +73,17 @@ function initMouseHallow() {
 }
 
 
-
 export default function ExplorationComponent() {
-    const list = [["KLANG", "klang"], ["KOLM", "kolm"], ["Tchoukadane", "tchoukadane"], ["Thibault Gomez Quintet", "thibaultgomezquintet"], ["Zozio", "zozio"], ["Terra Mare", "terramare"], ["Madam RamDam", "madamramdam"]];
+    const list = [
+        ["KLANG", "klang"],
+        ["KOLM", "kolm"],
+        ["Tchoukadane", "tchoukadane"],
+        ["Thibault Gomez Quintet", "thibaultgomezquintet"],
+        ["Zozio", "zozio"],
+        ["Terra Mare", "terramare"],
+        ["Madam RamDam", "madamramdam"],
+        ["Meije", "meije"]
+    ];
 
     // randomize list
     for (let i = list.length - 1; i > 0; i--) {
@@ -93,7 +101,8 @@ export default function ExplorationComponent() {
     return (
         <>
 
-            <div onMouseMove={mouseMove} className="exploration"  id="exploration" style={{zIndex: 1, position: "fixed", cursor: "none"}}
+            <div onMouseMove={mouseMove} className="exploration" id="exploration"
+                 style={{zIndex: 1, position: "fixed", cursor: "none"}}
                  data-pointer-events="true">
                 <div className="layer fonds mobile:hidden" data-depth="0"
                      style={{backgroundImage: "url(/images/exploration_bg.jpeg)"}}>
@@ -156,6 +165,14 @@ export default function ExplorationComponent() {
                     depth="2"
                     link={list[6][1]}
                     rock="minus"
+                />
+                <ExplorationProjectComponent
+                    title={list[7][0]}
+                    bottom="-49"
+                    right="-24"
+                    depth="3"
+                    link={list[7][1]}
+                    rock="caillans"
                 />
 
             </div>

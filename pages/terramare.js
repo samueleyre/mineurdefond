@@ -25,7 +25,7 @@ export default function Terramare() {
                     </span>
                 </p>
                 <div className="max-w-full">
-                    <img style={{width: "500px"}} src="images/terra_mare2.webp" alt="Affiche de Terra mare"/>
+                    <img className="image-clip-3" style={{width: "500px"}} src="images/terra_mare2.webp" alt="Affiche de Terra mare"/>
                 </div>
             </div>
             <p className="text-justify m-auto text-xl mt-16">
