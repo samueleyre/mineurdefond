@@ -6,6 +6,8 @@ import Image from "next/image";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons/faFacebook";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
+import Head from "next/head";
+
 
 const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
@@ -29,6 +31,11 @@ export default class Events extends Component {
 
         return <>
             <HeadComponent title="Events"/>
+            <Head>
+                {this.events.length > 0 && this.events[0].image && (
+                    <link rel="preload" href={this.events[0].image[0].url} as="image" />
+                )}
+            </Head>
             <NavComponent mode="light"/>
             <div style={{background: "#0d0d0d"}} className="pb-10 pt-20 bg-cover min-h-screen	">
                 <div className=" mobile:p-2 max-w-screen-lg m-auto">
@@ -72,7 +79,7 @@ export default class Events extends Component {
 export async function getStaticProps() {
     return {
         props: {
-            events: await getEvents() || [],
+            events: await getEvents() || []
         },
     }
 }
