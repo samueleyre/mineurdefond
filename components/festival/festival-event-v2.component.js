@@ -74,7 +74,7 @@ export default function FestivalEventV2Component(
             }
             <p className="pt-4" dangerouslySetInnerHTML={{__html: description}}></p>
             { actors ?
-                <p className="italic pt-6" style={{color: "grey"}}>{actors}</p>
+                <p className="italic pt-6" style={{color: "grey"}} dangerouslySetInnerHTML={{__html: actors}}></p>
                 : ""
             }
             { duration ?

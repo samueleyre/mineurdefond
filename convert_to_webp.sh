@@ -5,7 +5,7 @@ DIRECTORY="${1:-public/images}"
 
 # Function to convert images
 convert_to_webp() {
-    for img in "$DIRECTORY"/*.{jpg,png}; do
+    for img in "$DIRECTORY"/*.{jpg,jpeg,png}; do
         if [ -f "$img" ]; then  # Check if file exists
             local webp="${img%.*}.webp"
             if [ ! -f "$webp" ]; then  # Check if WEBP version exists
