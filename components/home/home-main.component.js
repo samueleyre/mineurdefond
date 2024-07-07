@@ -90,12 +90,12 @@ export default function HomeMainComponent() {
                 <div className="w-full bg-cover" style={{height: "100%", backgroundImage: 'url("images/bottom_rock.webp")'}}>
                     <div style={{paddingTop: "11rem"}} className="text-5xl pl-10 pr-10 text-white pb-10">
                         <a className="font-cameo text-fest2023" href="/festival-des-pantomines">
-                            <div style={{width: "300px"}}>
+                            <div style={{width: "300px", color: "#d93536"}}>
                                 FESTIVAL DES PANTOMINES
                             </div>
                         </a>
                         <div className="mt-10">
-                            <p className="text-xl md:pr-40 mb-4" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 11 au 15 août pour faire vibrer les montagnes !</p>
+                            <p className="text-xl md:pr-40 mb-4" style={{maxWidth: "756px"}}>Le Festival des Pantomines est de retour sur les communes de Villaroger et Sainte-Foy du 15 au 18 août 2024 pour faire vibrer les montagnes !</p>
                             <a className="font-cameo mobile:text-3xl sm:text-4xl button-rock-1" href="/festival-des-pantomines">VOIR le PROGRAMME !</a>
                         </div>
                     </div>

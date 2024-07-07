@@ -13,7 +13,7 @@ function FestivalDesPantomines() {
 
     return <>
         <HeadComponent title="Le festival des Pantomines"
-                       meta_description="Du 11 au 15 août 2023 à Villaroger et Sainte-Foy en Savoie"/>
+                       meta_description="Du 15 au 18 août 2024 à Villaroger et Sainte-Foy en Savoie"/>
         <NavComponent mode="dark" sm_mode="light" position="fixed"/>
 
         <div style={{position: 'relative'}}> {/* Adjust the height as needed */}
