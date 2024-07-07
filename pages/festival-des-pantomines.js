@@ -20,7 +20,7 @@ function FestivalDesPantomines() {
             <ParallaxImage imageSrc="/images/Gravure.webp" height="1000px" startOffset="0"/>
         </div>
         <div style={{backgroundColor: "white"}} className="overflow-hidden">
-            <div className="relative ProjectPage pb-10 fest_2024_project_page">
+            <div className="relative ProjectPage pb-10">
                 <div className="max-w-screen-lg m-auto">
                     <div className="md:pt-8">
                         <div className="fest_2024_image m-auto bg-center max-w-full" style={{
@@ -252,7 +252,7 @@ Touffe d’errance, c’est l’histoire de toutes ces personnes qu’elles ont 
                     </div>
                 </div>
             </div>
-            <div className="py-10 text-center" style={{
+            <div className="py-10 px-4 text-center" style={{
                 backgroundPositionX: "center",
                 backgroundImage: "linear-gradient(to bottom, #ffffff 5%, rgba(0, 0, 0, 0) 10%), url(/images/fest_bot_2024.webp)"
             }}>
