@@ -210,7 +210,7 @@ Contactez-nous pour vous inscrire et choisir votre chanson. De Nougaro à Stroma
                         <FestivalEventV2Component
                             image="balade.webp"
                             title="BALADE GUIDÉE"
-                            subtitle="Randonnée contée"
+                            subtitle=""
                             title_font="font-cameo"
                             title_color={mainColor2}
                             place_and_time="9h30 <br> Le Miroir, Sainte-Foy-Tarentaise"
@@ -226,7 +226,7 @@ Contactez-nous pour vous inscrire et choisir votre chanson. De Nougaro à Stroma
                             title_font="font-cameo"
                             title_color={mainColor1}
                             place_and_time="12h00 <br> Le Miroir, Sainte-Foy-Tarentaise"
-                            description="La violoncelliste Lola Malique livre un programme solo éphémère telle une expérience de l’intimité musicale, destinée à un public aux oreilles curieuses."
+                            description="La violoncelliste Lola Malique livre un programme solo éphémère telle une expérience de l’intimité musicale, destinée à un public aux oreilles curieuses. <br> Modulable selon les lieux et les contextes, alliant musiques de création, de répertoire, de poésies et de chansons, ce solo est un moment éphémère et unique ; jamais deux fois le même ! "
                             actors="Lola Malique - violoncelle"
                         />
 
@@ -272,7 +272,7 @@ Touffe d’errance, c’est l’histoire de toutes ces personnes qu’elles ont 
                 </div>
 
                 <p className="text-center bold mb-8 pl-4 pr-4">
-                    Contacts : c.mineursdefond@gmail.com / 06.87.29.02.65
+                    Contacts : c.mineursdefond@gmail.com / 06.25.22.11.88
                 </p>
 
                 <p className="text-center mt-16 mb-8 pl-4 pr-4">
