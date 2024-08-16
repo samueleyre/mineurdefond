@@ -155,7 +155,7 @@ Sous le regard de Anne Bitran <br>
                             subtitle="Musique orientale et acoustique"
                             title_font="font-cameo"
                             title_color={mainColor2}
-                            place_and_time="16h <br> Le Champet, clairière des Îles - Sainte-Foy-Tarentaise <br> (accès depuis le parking du Champet situé le long de la D902 entre Viclaire et Sainte-Foy-Tarentaise)"
+                            place_and_time="16h <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
                             description="Zamakan composé d’Abdallah Abozerkry et de Baptiste Ferrandis respectivement au saz et à la guitare, explore avec fougue et sensibilité les chemins de traverses qui rassemblent d’Orient à Occident. A travers un univers musical qui navigue entre énergie pure et rêverie poétique, Zamakan casse les frontières du genre et affirme son appartenance à cette nouvelle génération de musiciens fiers de défendre les identités multiples de la richesse musicale mondialisée. <br>
                         Zamakan est un duo devenu trio avec les virtuoses Abdallah Abozekry au saz, Baptiste Ferrandis à la guitare et Baiju Bhatt au violon."
                             actors="Abdallah Abozekry - saz, voix, percussions, effets, composition <br> Baiju Bhatt - violon <br> Baptiste Ferrandis - guitare, effets, composition"
@@ -168,7 +168,7 @@ Sous le regard de Anne Bitran <br>
                             subtitle="Musique traditionnelle française"
                             title_font="font-cameo"
                             title_color={mainColor1}
-                            place_and_time="19h30 <br> Le Champet, clairière des Îles - Sainte-Foy-Tarentaise <br> (accès depuis le parking du Champet situé le long de la D902 entre Viclaire et Sainte-Foy-Tarentaise)"
+                            place_and_time="19h30 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
                             description="Clémence Cognet et Noëllie Nioulou sont imprégnées de musique baroque comme elles le sont des musiques de violons populaires du Massif Central. Elles ont donc pris la liberté de construire un répertoire de concert sur instruments baroques, exposant la fluidité de ce qui apparaît comme un grand continuum musical.
                         <br><br>Les mélodies à danser baroques répondant aux complaintes traditionnelles, les brunettes aux bourrées. Leur solide complicité bâtie sur des années de jeu en bal, donne à entendre une musique vive et subtile, un son profond et riche."
                             actors="Clémence Cognet - violon baroque et chant <br> Noëllie Nioulou - violon baroque, viole de gambe et chant"
@@ -180,7 +180,7 @@ Sous le regard de Anne Bitran <br>
                             subtitle="Musique de montagne (Alpes du Sud, Auvergne, Appalaches)"
                             title_font="font-cameo"
                             title_color={mainColor2}
-                            place_and_time="21h00 <br> Le Champet, clairière des Îles - Sainte-Foy-Tarentaise <br> (accès depuis le parking du Champet situé le long de la D902 entre Viclaire et Sainte-Foy-Tarentaise)"
+                            place_and_time="21h00 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
                             description="L'harmonica et le violon sont deux instruments populaires porteurs d'histoires et d'imaginaires. En jouant des airs patinés par le temps, ce duo cherche avec une énergie commune, sa propre liberté de jeu et une complicité avec les personnes qui dansent. <br>
 Le Duo Vargoz a été créé en 2017 par deux frères, Guillaume et Robin. Chacun explore les musiques et danses de traditions orales depuis une vingtaine d’années. Si le répertoire principal du Duo Vargoz est issu du territoire alpin, ils ont confronté leur regard avec de nombreux musiciens-chercheurs d’autres régions: Auvergne, Irlande, Piémont italien, Appalaches…"
                             actors="Guillaume Vargoz - harmonicas <br> Robin Vargoz - violon, violon alto, voix, pieds"
