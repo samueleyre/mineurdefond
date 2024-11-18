@@ -22,7 +22,7 @@ export default function Terramare() {
                 Initié en 2018, l’artiste des Alpes du nord, se consacre avec tendresse à l’écriture de chansons dont la
                 poésie fait se rencontrer les langues de ses ancêtres avec celles de ses rencontres, dessine de manière
                 instinctive les émotions qu’éveille l’amour, la montagne, la mer, le départ, le retour, la mémoire et
-                l’ivresse de l’errance. 
+                l’ivresse de l’errance.
             </p>
             <figure
                 className="flex justify-center mt-16">
