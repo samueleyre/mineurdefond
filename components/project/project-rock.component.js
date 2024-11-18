@@ -11,8 +11,8 @@ export default function ProjectRockComponent({title, bgMobileClass="bg-white", d
             <div className={"h-screen w-full mobile:pb-56 " + bgMobileClass}>
                 <div className="h-full flex justify-center items-center">
                     <div
-                        className="animate-fadeIn max-h-screen max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col"
-                        style={{height: "800px", width: "800px", backgroundImage: `url(/images/${image_name})`, rotate: "-9deg"}}>
+                        className="project-rock animate-fadeIn max-h-screen max-w-full mobile:bg-cover sm:bg-contain bg-center bg-no-repeat flex justify-center flex-col"
+                        style={{height: "800px", width: "800px", backgroundImage: `url(/images/${image_name})`}}>
                         {children ?
                             children :
                                 <>
