@@ -1,42 +1,39 @@
 import FestivalEventV2Component from "../components/festival/festival-event-v2.component";
 import HeadComponent from "../components/main/head.component";
 import dynamic from "next/dynamic";
-import ParallaxImage from "./parallaxeImage";
 
 const NavComponent = dynamic(() => import('../components/main/nav.component'), {ssr: false})
 
 
 function FestivalDesPantomines() {
 
-    const mainColor1 = "#2b96b0"
-    const mainColor2 = "#d93536"
+    const mainColor1 = "#5f3993"
+    const mainColor2 = "#f2c030"
 
     return <>
         <HeadComponent title="Le festival des Pantomines"
-                       meta_description="Du 15 au 18 août 2024 à Villaroger et Sainte-Foy en Savoie"/>
+                       meta_description="Les 13 et 14 août 2025 à Villaroger et Sainte-Foy en Savoie"/>
         <NavComponent mode="dark" sm_mode="light" position="fixed"/>
 
-        <div style={{position: 'relative'}}> {/* Adjust the height as needed */}
-            <ParallaxImage imageSrc="/images/Gravure.webp" height="1000px" startOffset="0"/>
-        </div>
         <div style={{backgroundColor: "white"}} className="overflow-hidden">
             <div className="relative ProjectPage pb-10">
                 <div className="max-w-screen-lg m-auto">
                     <div className="md:pt-8">
                         <div className="fest_2024_image m-auto bg-center max-w-full" style={{
-                            backgroundImage: "url(/images/fest_top_2024.webp)",
+                            backgroundImage: "linear-gradient(black, black), url(/images/fest_top_2024.webp)",
                             width: "800px",
-                            boxShadow: "1px 5px 10px #979797"
+                            boxShadow: "1px 5px 10px #979797",
+                            backgroundBlendMode: "saturation"
                         }}>
                             <h1 className="font-camero white bold w-full h-full flex justify-center items-center"
-                                style={{backgroundColor: "#0000006b"}}>
+                                style={{backgroundColor: "#0000006b", color: mainColor2}}>
                                 Festival <br/>
                                 des Pantomines
                             </h1>
                         </div>
                     </div>
                     <h2 className="font-cameo text-5xl pt-2 mb-2 text-center" style={{color: "#050505"}}>
-                        Du 15 Au 18 Août 2024
+                        13 et 14 Août 2025
                     </h2>
                     <p className="text-xl mb-6 text-center italic" style={{color: "#656565"}}>
                         Une célébration artistique au cœur des Alpes
@@ -48,208 +45,117 @@ function FestivalDesPantomines() {
                         (Savoie - entre Bourg Saint Maurice et Val d’Isère)
                     </p>
 
-                    <div className="p-6 justify-center flex m-auto w-full">
-                        <a className="justify-center flex" href="/documents/plan2024.pdf" target="_blank"
-                           rel="noreferrer">
-                    <span className="p-4"
-                          style={{backgroundColor: "#242424", color: "white"}}>Télécharger le plan</span>
-                            <img width="60px" src="/images/plan.webp" alt="le plan du festival"/>
-                        </a>
-                    </div>
-
                     <p className="text-xl pt-8 mb-6 pl-4 pr-4">
-                        Le <b>Festival des Pantomines</b> sera de retour du <b>15 au 18 août</b> sur les communes de
-                        Villaroger
-                        et Sainte-Foy-Tarentaise !
+                        Le <b>Festival des Pantomines</b> revient les <b>13 et 14 août</b> sur les communes de
+                        Villaroger et Sainte-Foy-Tarentaise !
                         <br/><br/>
-                        Avec des concerts et des spectacles en pleine nature, le Festival des Pantomines est un
-                        événement
-                        original tout en itinérance pour vous faire découvrir les joyaux de la Haute-Tarentaise.
+                        Du cirque au rock en passant par la chanson et le théâtre, six spectacles et concerts entre alpages et coeurs de villages sont au rendez-vous cette année.
                         <br/><br/>
-                        Pour cette <b>quatrième édition</b>, retrouvez au programme pas moins de <b>dix concerts et
-                        spectacles</b> : certains festifs, d’autres contemplatifs, tous surprenants ! <br/>
-                        Allant du jazz aux musiques d’inspiration voire de collectage traditionnel, du théâtre au
-                        spectacle
-                        de marionnettes, nous passerons d'un versant à l'autre de la montagne et prendrons les chemins
-                        de
-                        traverse pour découvrir des musiques et des histoires à danser et à partager.
-                    </p>
-                    <p className="text-xl mb-12 pl-4 pr-4 italic">
-                        Nous maintenons notre politique d’entrée à prix libre afin que ce festival soit accessible pour
-                        tous.tes.
+                        La programmation de cette édition vous est toujours proposées par Les Mineureuses, mais la réalisation et l’organisation du festival sont cette fois-ci assurées par les communes de Villaroger et Sainte-Foy-Tarentaise et les communauté de commune de Haute-Tarentaise.
+                        <br/><br/>
+                        Venez (re)découvrir des concerts et spectacles hauts en couleur dans les superbes paysages tarins !
                     </p>
                     <p className="text-xl mb-8 pl-4 pr-4 text-center">
-                        <span className="pl-2 pr-2 font-cameo">ENTREE A PRIX LIBRE / BUVETTE SUR PLACE </span><br/>
+                        <span className="pl-2 pr-2 font-cameo">ENTREE LIBRE</span><br/>
                     </p>
                     <br/>
                     <br/>
                     <p className="text-2xl mb-6 text-center mt-16 italic" style={{color: "grey"}}>
                         PROGRAMME
                     </p>
-                    <p className="p-6 text-4xl text-center">Jeudi 15 Août</p>
+                    <p className="p-6 text-4xl text-center">Mercredi 13 Août - <span className="text-4xl"> SAINTE-FOY-TARENTAISE</span></p>
                     <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
 
                         <FestivalEventV2Component
-                            image="tomba_pic_noir.webp"
-                            title="TOMBA LE PIC NOIR"
-                            subtitle="Balade contée - Conte et musiques des Alpes"
+                            image="terra_mare3.webp"
+                            image_position="top"
+                            title="Terra Mare"
                             subtitle_color="grey"
                             title_capital="small"
                             title_font="font-cameo"
                             title_color={mainColor1}
-                            place_and_time="10h00 <br> Départ à partir du parking de l’échaillon, Sainte- Foy-Tarentaise"
-                            actors="Paolo Gauthier - Conteur et musicien"
-                            description={"L'histoire de cet oiseau est celle d'une échappée vers les cimes. Une ascension initiatique imaginée collectivement par les artistes des Mineureuses. Un conte drôle et tendre raconté par Paolo Gauthier, au fil d'une balade ponctuée au violon par des aires populaires des Alpes."}
-                            duration="2h environ"
+                            place_and_time="11h au bachal de la Masure (Sainte-Foy-Tarentaise)"
+                            actors="Paolo Gauthier - Guitare-cithare et chant, Marion Ruault – Contrebasse, Yurie Hu – Violon, Maiana Lavielle – Violoncelle"
+                            description={"Terra Mare est un quatuor de chansons folk créé en 2025 par l'artiste savoyard Paolo Gauthier à partir de ses carnets de voyage et de sa guitare - cithare.<br><br>" +
+                                "Sa poésie, sublimée par le trio à cordes de Yurie Hu, Marion Ruault et Maëlle Le Gall, raconte le départ, les retrouvailles, les montagnes, la mer et la mémoire des migrations, dans la langue natale du chansonnier comme celles de ses proches ancêtres, l'español, l’italien et l’occitan alpin.<br><br>" +
+                                "L’univers de Terra Mare est inspiré par l'impressionnisme, trouve un écho en la phénoménologie et une histoire avec la poésie contemplative."}
                         />
+
                         <FestivalEventV2Component
-                            image="a_more.webp"
-                            title="A MORE"
-                            subtitle="Solo de danse"
-                            title_font="font-cameo"
-                            title_color={mainColor2}
-                            place_and_time="19h30 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise (accès PMR)"
-                            description="A MORE se situe dans le paradoxe de son titre.<br>
-Lisez-le comme vous le souhaitez.<br>
-C’est d’une solitude dont on sera témoin.<br>
-On y observe un être inadapté sur un terrain qui se meut, se déchire et se dérobe.<br>
-Une quête de sens à être ici, dont le corps s’empare, taisant les mots.<br>
-Dont les mots résonnent jusqu’à faire sonner l’espace.<br>
-<br><br>
-Claire Lamothe habite les seuils entre danse, théâtre et chant, proposant une performance mobile et plastique qui révoquent l’idée même de frontière. Elle évolue dans une scénographie de papier se déployant sans cesse.
-Avec cette pièce, elle souhaite nous inviter dans le ressenti qu’elle se fait du flux d’informations croissant et incessant, où elle questionne nos positions et mouvements variables.
-"
-                            actors="De et par Claire Lamothe<br>
-Ana Samoilovich - lumière<br>
-Paul Boulier - régie son<br>
-Charlotte Thomas & Claire Lamothe - scénographie<br>
-Béatrice Debrabant - assistance chorégraphique<br>
-Elsa Guiet & Pierre Teregeol - musique<br>
-Claire Lamothe - montage son"
-                        />
-                        <FestivalEventV2Component
-                            image="Ginette_Guirolle.webp"
-                            title="GINETTE GUIROLLE, UNE MARIONNETTE DE BAR"
-                            subtitle="Spectacle de marionnette"
+                            image="the_toi.avif"
+                            title="Thé Toi"
+                            subtitle_color="grey"
+                            title_capital="small"
                             title_font="font-cameo"
                             title_color={mainColor1}
-                            place_and_time="21h00 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise (accès PMR)"
-                            description="L’essentiel, du côté du cœur, des joies et des blessures, sera dit là, sur le zinc. C’est là, dans la vie, quand les bistrots sont ouverts, que les solitudes s’épanchent et se confient. Ginette, effrontée, prend le zinc comme elle prendrait la scène. Toute sa vie se déroule devant nos yeux, on pourrait presque dire, comme un documentaire, sur le portrait d’une femme, devenue jeune fille pendant la 2ème guerre mondiale, femme, épouse puis amante, puis un jour orpheline, et un autre jour mère puis grand mère... Une vie.
-<br><br>
-Inspirée par Angèle dans la pièce de théâtre “Inventaires” de Philippe Minyana, l’humanité du personnage de Ginette réside dans sa naïveté ; naïve, elle l’est jusque dans la révolte contre l’occupation, contre l’antisémitisme, le racisme, la mort. C’est toute la beauté de Ginette et c’est cela que Cendre Chassanne et Gallia Vallet chercheront à faire émerger, ce point de révolte, universel, intemporel, nécessaire et qui fait qu’on retrouve du sens commun dans l’intimité des bars."
-                            actors="
-                        Cendre Chassanne - mise en scène <br>
-Gallia Vallet - manipulation, construction et jeu <br>
-Olivier Vallet - création lumière <br>
-Julien Vallet - Regard extérieur <br>
-Sous le regard de Anne Bitran <br>
-                        "
+                            place_and_time="17h au bachal de la Masure (Sainte-Foy-Tarentaise)"
+                            actors="Iorhanne Da Cunha"
+                            description={"Mais si on tenait absolument à définir ce solo pour vous donner envie de venir le découvrir, on pourrait dire, sans trop vous mentir que c'est un peu de sarcasme, pas mal d'autodérision, quelques notes de Chopin, une pointe d'audace, un trapèze Washington bancal, un violon qui pendouille, du Boris Vian et surtout, \"l'aigreur joyeuse et communicative d'une confiance en soi a jamais disparue car dissoute dans une succession laborieuse et indélébile d'expérience humaine et relationnelle...<br><br>" +
+                                "On vous attend pour partager cette bonne dose de convivialité !"}
                         />
+
+
+                        <FestivalEventV2Component
+                            image="oasis_boom.webp"
+                            title="Oasis Boom"
+                            subtitle_color="grey"
+                            title_capital="small"
+                            title_font="font-cameo"
+                            title_color={mainColor2}
+                            place_and_time="20h à la salle Planjo (Sainte-Foy-Tarentaise)"
+                            actors="Mélissa Acchiardi (batterie préparée, synthé), Vincent Duchosal (guitare électrique préparée, effets)"
+                            description={"Des White stripes en passant par les Black Keys, le duo batterie/guitare est au rock ce que le trio piano/basse/batterie est au jazz : un classique. Néanmoins, ce serait une erreur de vouloir réduire la musique d'Oasis Boom a une seule esthétique. Dans l'autoradio du cactus bus (c'est le nom de la seule et unique piece fleuve qu'ils jouent sur scène), il y a certes du bon gros rock graisseux, mais aussi de la surf-music, du drone, de la berceuse et de la musique de club. L'engin roule à tombeau ouvert, se transforme et vole, se téléporte. Il est direct et sans arrêt. On admire à travers ses fenêtres salies de sable rouge les paysages hallucinés du Piton de la Fournaise, les méandres alanguis du fleuve Niger et les immensités sèches de l'Arizona.<br><br>" +
+                                "Quand à l'arrivée, Mélissa Acchiardi et Vincent Duchosal descendent en silence, les mains noircies d'électricité, les yeux encore pleins d’horizons fondus, on comprend que ce voyage-là ne s'arrête jamais vraiment."}
+                        />
+
                     </div>
-                    <p className="p-6 text-4xl text-center">Vendredi 16 Août </p>
+                    <p className="p-6 text-4xl text-center">Jeudi 14 Août - <span className="text-4xl">VILLAROGER</span></p>
+
                     <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
 
                         <FestivalEventV2Component
-                            image="zamakan.webp"
-                            title="ZAMAKAN"
-                            subtitle="Musique orientale et acoustique"
-                            title_font="font-cameo"
-                            title_color={mainColor2}
-                            place_and_time="16h <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
-                            description="Zamakan composé d’Abdallah Abozerkry et de Baptiste Ferrandis respectivement au saz et à la guitare, explore avec fougue et sensibilité les chemins de traverses qui rassemblent d’Orient à Occident. A travers un univers musical qui navigue entre énergie pure et rêverie poétique, Zamakan casse les frontières du genre et affirme son appartenance à cette nouvelle génération de musiciens fiers de défendre les identités multiples de la richesse musicale mondialisée. <br>
-                        Zamakan est un duo devenu trio avec les virtuoses Abdallah Abozekry au saz, Baptiste Ferrandis à la guitare et Baiju Bhatt au violon."
-                            actors="Abdallah Abozekry - saz, voix, percussions, effets, composition <br> Baiju Bhatt - violon <br> Baptiste Ferrandis - guitare, effets, composition"
-                            listenLink="https://www.youtube.com/watch?v=jIfA8KexMwk&ab_channel=ZAMAKAN"
-                        />
-
-                        <FestivalEventV2Component
-                            image="duo_garenne.webp"
-                            title="DUO GARENNE"
-                            subtitle="Musique traditionnelle française"
+                            image="kobon.webp"
+                            title="Kobon"
+                            subtitle_color="grey"
+                            title_capital="small"
                             title_font="font-cameo"
                             title_color={mainColor1}
-                            place_and_time="19h30 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
-                            description="Clémence Cognet et Noëllie Nioulou sont imprégnées de musique baroque comme elles le sont des musiques de violons populaires du Massif Central. Elles ont donc pris la liberté de construire un répertoire de concert sur instruments baroques, exposant la fluidité de ce qui apparaît comme un grand continuum musical.
-                        <br><br>Les mélodies à danser baroques répondant aux complaintes traditionnelles, les brunettes aux bourrées. Leur solide complicité bâtie sur des années de jeu en bal, donne à entendre une musique vive et subtile, un son profond et riche."
-                            actors="Clémence Cognet - violon baroque et chant <br> Noëllie Nioulou - violon baroque, viole de gambe et chant"
+                            place_and_time="11h à l'église (Villaroger)"
+                            actors="Clément Merienne (piano), Emilian Ducret (batterie) et Etienne Renard (contrebasse)"
+                            description={"Le jazz du trio Kobon naît d’une quête inspirée par un problème non résolu : celui du triangle de Kobon, une métaphore des interactions infinies entre les instruments, qui représente l’équilibre entre rigueur et liberté, structure et improvisation."}
                         />
 
-                        <FestivalEventV2Component
-                            image="duo_vargoz.webp"
-                            title="DUO VARGOZ"
-                            subtitle="Musique de montagne (Alpes du Sud, Auvergne, Appalaches)"
-                            title_font="font-cameo"
-                            title_color={mainColor2}
-                            place_and_time="21h00 <br> Salle polyvalente de Planjo, Sainte-Foy-Tarentaise - CHANGEMENT DE LIEU A CAUSE DES INTEMPERIES"
-                            description="L'harmonica et le violon sont deux instruments populaires porteurs d'histoires et d'imaginaires. En jouant des airs patinés par le temps, ce duo cherche avec une énergie commune, sa propre liberté de jeu et une complicité avec les personnes qui dansent. <br>
-Le Duo Vargoz a été créé en 2017 par deux frères, Guillaume et Robin. Chacun explore les musiques et danses de traditions orales depuis une vingtaine d’années. Si le répertoire principal du Duo Vargoz est issu du territoire alpin, ils ont confronté leur regard avec de nombreux musiciens-chercheurs d’autres régions: Auvergne, Irlande, Piémont italien, Appalaches…"
-                            actors="Guillaume Vargoz - harmonicas <br> Robin Vargoz - violon, violon alto, voix, pieds"
-                        />
 
-                    </div>
-                    <p className="p-6 text-4xl text-center">Samedi 17 Août</p>
-                    <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
-                        <p className="text-2xl text-bold pb-12">
-                            Journée de fête organisée par le comité des Goyets
-                        </p>
                         <FestivalEventV2Component
-                            image="radio_crochet.webp"
-                            title="RADIO-CROCHET"
-                            subtitle="Concert participatif"
+                            image="comics_trip.webp"
+                            title="Comic's Trip"
+                            subtitle_color="grey"
+                            title_capital="small"
                             title_font="font-cameo"
                             title_color={mainColor1}
-                            place_and_time="11h00 <br> Le Pré, Villaroger (accès PMR)"
-                            description="Cette journée prendra naturellement des airs de fête de village. L’orchestre des Pantomines se joint à la fête des Goyets avec un radio crochet (karaoké) accompagné de musiciens aguerris. Chacun et chacune est invité à monter sur scène pour nous chanter sa plus belle chanson, devant un public déjà conquis.
-Contactez-nous pour vous inscrire et choisir votre chanson. De Nougaro à Stromae, il est certain que vous trouverez votre titre favori parmi notre liste gargantuesque de chansons."
-                            actors="Thibault Gomez, membre du collectif Les Mineureuses - coordinateur musical"
+                            place_and_time="17h au jardin de l'église (Villaroger)"
+                            actors="Luka Fiorello, Simon Teissier, Nathan Roumenov"
+                            description={"Rencontrés sur les bancs de l’école, Nathan, Simon et Luka ont noué une amitié forte et ensemble ont créé un spectacle aux accents burlesques avec une esthétique et des codes de jeu théâtraux directement inspirés de la bande dessinée."}
                         />
 
-                    </div>
-                    <p className="p-6 text-4xl text-center">Dimanche 18 Août</p>
-                    <div className="mobile:p-4 sm:pt-22 sm:pb-22 sm:pl-4 sm:pr-4 mb-24 flex flex-wrap justify-center">
+
                         <FestivalEventV2Component
-                            image="balade.webp"
-                            title="BALADE GUIDÉE"
-                            subtitle=""
+                            image="thibault_gomez.webp"
+                            title="Thibault Gomez"
+                            subtitle_color="grey"
+                            title_capital="small"
                             title_font="font-cameo"
                             title_color={mainColor2}
-                            place_and_time="9h30 <br> Le Miroir, Sainte-Foy-Tarentaise"
-                            description="Joignez-vous à une randonnée originale face aux glaciers ! Pascale vous emmènera dans un hameau incontournable de la commune de Sainte-Foy pour vous faire découvrir les architectures typiques savoyardes ainsi que d’étonnantes histoires locales."
-                            actors="Pascale Guichon - guide du patrimoine et accompagnatrice en moyenne montagne"
-                            duration="environ 2h30"
+                            place_and_time="20h à l'église (Villaroger)"
+                            actors="Thibault Gomez (piano préparé)"
+                            description={"Le pianiste Thibault Gomez propose un concert en piano solo mêlant compositions et improvisations libres.<br><br>" +
+                                "Le piano, ici, est préparé : quelques objets glissés entre les cordes modifient subtilement les sons, transforment l’instrument en un terrain d’exploration sonore. Les timbres se frottent, résonnent, grincent parfois — autant d’inattendus qui éveillent l’écoute autrement.<br>" +
+                                "Pas besoin de connaissances préalables pour écouter cette musique, seulement un peu de curiosité : elle se découvre dans l’instant, à l’écoute des textures, des rythmes... <br><br>Une expérience simple, où le son parle de lui-même."}
                         />
 
-                        <FestivalEventV2Component
-                            image="lola_malique.webp"
-                            title="LOLA MALIQUE"
-                            subtitle="Solo de violoncelle"
-                            title_font="font-cameo"
-                            title_color={mainColor1}
-                            place_and_time="12h00 <br> Le Miroir, Sainte-Foy-Tarentaise"
-                            description="La violoncelliste Lola Malique livre un programme solo éphémère telle une expérience de l’intimité musicale, destinée à un public aux oreilles curieuses. <br> Modulable selon les lieux et les contextes, alliant musiques de création, de répertoire, de poésies et de chansons, ce solo est un moment éphémère et unique ; jamais deux fois le même ! "
-                            actors="Lola Malique - violoncelle"
-                        />
-
-                        <FestivalEventV2Component
-                            image="touffe_errance.webp"
-                            title="TOUFFE D’ERRANCE"
-                            subtitle="Théâtre"
-                            title_font="font-cameo"
-                            title_color={mainColor2}
-                            place_and_time="16h00 <br> Lotissement route du Passet, Sainte-Foy-Tarentaise"
-                            description="Touffe d’errance, c’est l’histoire d’Arthème et Birgueune. Leur sport de vie, c’est l’errance. Vous les connaissez ?<br>
-Il paraît qu’elles sillonnent les routes avec leur caravane, depuis une éternité. Y en a même qui disent qui les ont vu voler. Il paraît que parfois elles s'arrêtent ici ou là. Un moment. Elles observent, croisent, rencontrent des paysages et des personnes qui leur transmettent des histoires, des histoires à se souvenir. Alors elles les captent, les récoltent, les partagent. Et si cette fois, prises dans un ultime tourbillon, la pratique de leur discipline les poussaient vers un nouvel ailleurs ?
-<br><br>
-Avec leur caravane, Elodie, Lucile et Pauline se sont installées le temps d’une demi journée sur un
-marché, une place de village... et ont invitées des personnes à y entrer pour leur poser trois questions :<br>
-Si on te dit le mot 'errance' ?<br>
-Est-ce que tu peux nous raconter un virage, une bifurcation, dans ta vie ?<br>
-Si tu avais un message à faire passer, maintenant, ce serait lequel ?<br>
-Touffe d’errance, c’est l’histoire de toutes ces personnes qu’elles ont rencontrées."
-                            actors="- conception collective - <br> Pauline Drach et Elodie Guibert <br> Lucile Marianne - mise en scène"
-                        />
 
                     </div>
+
                 </div>
             </div>
             <div className="py-10 px-4 text-center" style={{
@@ -263,7 +169,7 @@ Touffe d’errance, c’est l’histoire de toutes ces personnes qu’elles ont 
 
 
                 <div className="p-6 justify-center flex m-auto w-full">
-                    <a className="justify-center flex" href="/documents/programme2024.pdf" target="_blank"
+                    <a className="justify-center flex" href="/documents/programme2025.pdf" target="_blank"
                        rel="noreferrer">
                     <span className="p-4"
                           style={{backgroundColor: "#242424", color: "white"}}>Télécharger le programme</span>
@@ -271,31 +177,14 @@ Touffe d’errance, c’est l’histoire de toutes ces personnes qu’elles ont 
                     </a>
                 </div>
 
-                <p className="text-center bold mb-8 pl-4 pr-4">
-                    Contacts : c.mineursdefond@gmail.com / 06.25.22.11.88
-                </p>
-
                 <p className="text-center mt-16 mb-8 pl-4 pr-4">
-                    Tous les spectacles sont à prix libre (conseillé 10€).
-                </p>
-
-                <p className="text-center">
-                    Vous pouvez suivre l'évènement sur <a className="underline" style={{color: "#a76a53"}}
-                                                          href="https://www.facebook.com/CollectifMineursdefond"
-                                                          target="_blank" rel="noreferrer">Facebook</a> et <a
-                    style={{color: "#a76a53"}} className="underline"
-                    href="https://www.instagram.com/festivaldespantomines/?hl=fr" target="_blank"
-                    rel="noreferrer">Instagram</a>
-                </p>
-
-                <p className="text-center mt-16 mb-8 md:w-1/2 mx-auto">
-                    Un événement organisé par le collectif Mineurs de fond avec le soutien des Communes de Villaroger et
-                    Sainte-Foy, de la Communauté de communes de Haute-Tarentaise, du Département de la Savoie et de la
-                    SPEDIDAM.
+                    Tous les spectacles sont gratuits.
                 </p>
 
                 <p className="text-center mt-16 mb-8 pl-4 pr-4">
                     Les programmes des éditions précédentes : <br/>
+                    <a style={{color: "#a76a53"}} href="festival-des-pantomines-2024" target="_blank" rel="noreferrer">Pantomines
+                        2024</a> <br/>
                     <a style={{color: "#a76a53"}} href="festival-des-pantomines-2023" target="_blank" rel="noreferrer">Pantomines
                         2023</a> <br/>
                     <a style={{color: "#a76a53"}} href="festival-des-pantomines-2022" target="_blank" rel="noreferrer">Pantomines

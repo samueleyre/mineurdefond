@@ -393,7 +393,7 @@ svg.exploration {
   clip-path: polygon(2% 1%, 1% 3%, 0.5% 10%, 0% 15%, 0.5% 20%, 0% 25%, 0.1% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0.5% 70%, 1% 75%, 1% 80%, 1.5% 85%, 3% 88%, 5% 91%, 7% 92%, 10% 94%, 13% 95%, 16% 96%, 19% 96.5%, 23% 98%, 26% 97.7%, 30% 97.3%, 34% 97%, 38% 97%, 42% 97%, 46% 97%, 50% 97%, 54% 97%, 58% 97%, 62% 96.5%, 66% 96%, 70% 96%, 74% 97%, 78% 98%, 82% 99%, 86% 99.5%, 89% 99%, 92% 98.5%, 94% 98%, 96% 97%, 97% 96%, 98% 94%, 99% 92%, 99.5% 89%, 100% 85%, 99.5% 80%, 99.9% 75%, 99.8% 70%, 99.6% 65%, 99.5% 60%, 99% 55%, 98.5% 50%, 99.2% 45%, 99.3% 34.2%, 98% 35%, 97.5% 30%, 97% 25%, 96% 18%, 94% 15%, 93% 10%, 92% 5%, 90% 2%, 88% 0%, 85% 0%, 80% 1%, 75% 2%, 70% 3%, 65% 4%, 60% 4%, 55% 4%, 50% 4%, 45% 4%, 40% 4%, 35% 4%, 30% 4%, 25% 4%, 20% 4%, 15% 3%, 10% 2%, 7% 2%, 5% 1%, 3% 0.5%, 2% 1%);
   //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cdefs%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0'/%3E%3C/filter%3E%3Cpattern id='rockPattern' patternUnits='userSpaceOnUse' width='200' height='200'%3E%3Crect x='0' y='0' width='200' height='200' fill='rgb(79%2C 128%2C 193)' filter='url(%23noiseFilter)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%' height='100%' fill='url(%23rockPattern)'/%3E%3C/svg%3E");
   background-size: cover;
-  background-color: #d93536;
+  //background-color: #d93536;
   color: white;
   padding: 20px;
   display: inline-block;
