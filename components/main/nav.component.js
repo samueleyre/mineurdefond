@@ -51,16 +51,20 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             link: '/'
         },
         {
+            name: "Festival",
+            submenu: "edition"
+        },
+        {
+            name: "Le livre Tomba",
+            link: '/tomba'
+        },
+        {
             name: "Dates",
             link: '/events'
         },
         {
             name: "Projets",
             submenu: "project"
-        },
-        {
-            name: "Festival",
-            submenu: "edition"
         },
         {
             name: "Histoire",

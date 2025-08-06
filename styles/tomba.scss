@@ -1,0 +1,24 @@
+#tombaBird {
+  width: 250px;
+}
+
+.gradient-overlay {
+  transform: translateX(-100%);
+}
+
+#tombaBird:hover .gradient-overlay {
+  animation: shimmer 0.8s ease-in-out;
+}
+
+#tombaBird:hover .birdSinging {
+  display: block;
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

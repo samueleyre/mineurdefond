@@ -2,6 +2,7 @@
 @import "story_page";
 @import "nav";
 @import "festival";
+@import "tomba";
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,9 @@
   src: url(CameoSansDEMO.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
 
 @media (max-width: 767px) {
   * {
