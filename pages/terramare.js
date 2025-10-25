@@ -7,51 +7,45 @@ export default function Terramare() {
         <ProjectRockComponent title="Terra Mare" description="Folk des Alpes — Paolo Gauthier — Guitare-cithare, chant, tambour, poèmes & musique"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">
-                <b>Terra Mare</b> est une échappée folk, guitare-cithare-voix, du chansonnier <b>Paolo Gauthier</b>. Initié en 2018, l’artiste des Alpes, se consacre avec tendresse à la mosaïque de chansons à partir de ses carnets de voyages, dont la poésie fait se rencontrer les langues de ses ancêtres avec celles de ses rencontres, raconte le départ, les retrouvailles, les montagnes, la mer et la mémoire des migrations.
+                <b>Terra Mare</b> raconte le départ, les retrouvailles, les montagnes, la mer et la mémoire des migrations.
             </p>
-            <p className="text-xl md:w-10/12 text-center m-auto mb-10">
-                Pour tout instrumentarium une guitare-cithare co-imaginée avec le luthier <b>Laurent Huchard</b>, le solo s'ouvre à un quatuor en 2025 avec <b>Yurie Hu</b> au violon, <b>Marion Ruault</b> à la contrebasse et <b>Maiana Lavielle</b> au violoncelle.
-            </p>
+
             <div className="max-w-full flex justify-center mt-20">
-                <img className="image-clip-3" style={{width: "500px"}} src="images/terra_mare2.webp"
+                <img className="image-clip-3" style={{width: "500px"}} src="images/terra_mare4.webp"
                      alt="Affiche de Terra mare"/>
             </div>
 
-            <p className="text-justify m-auto text-xl mt-16">
-                Terra Mare est une échappée folk, guitare-voix, de l’auteur-compositeur-interprète Paolo Gauthier.
-                Initié en 2018, l’artiste des Alpes du nord, se consacre avec tendresse à l’écriture de chansons dont la
-                poésie fait se rencontrer les langues de ses ancêtres avec celles de ses rencontres, dessine de manière
-                instinctive les émotions qu’éveille l’amour, la montagne, la mer, le départ, le retour, la mémoire et
-                l’ivresse de l’errance.
+            <p className="text-xl md:w-10/12 text-center m-auto my-12">
+                Pour origine l’écriture d’une prose où se manifeste l’inconscient, le chansonnier <b>Paolo Gauthier</b> se laisse traverser par les motifs de la contemplation et de la romance. Rythmé par une guitare-cithare unique, la rencontre avec le trio à cordes inédit de <b>Yurie Hu</b>, <b>Maëlle Le Gall</b> et <b>Marion Ruault</b> à pour point de départ une passion partagée pour la poésie et la musique picturale.
             </p>
+
             <figure
                 className="flex justify-center mt-16">
-                <iframe width="1200" height="500" src="https://www.youtube.com/embed/RnFIVtjwqvI?si=y1llRmN9hrDPtly4?feature=oembed"
+                <iframe width="1200" height="500" src="https://www.youtube.com/embed/EO6FItBSHlg?si=LGvidSlhlx1sFQ-R?feature=oembed"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen=""></iframe>
             </figure>
-            <p className="text-justify m-auto text-xl mt-16">
-                Sa guitare, de douze ou dix-huit cordes, est une une co-création avec le luthier Laurent Huchard et
-                rappelle les intonations de la harpe ou de la cithare, inspire une musique des berceuses.
-                <br/>
-                <br/>
-                Il enregistre un premier disque en 2020, Liuervehc, dans la chapelle de Montclar-Sur-Gervanne dans la
-                Drôme. Les années suivantes sont ponctées de veillées dans des cafés associatifs, lieux collectifs et en
-                église. Animé par sa culture montagnarde, le musicien organise une première tournée-à-pied en avril 2023
-                dans les chapelles du Limousin.
-                <br/>
-                <br/>
-                Un deuxième disque a été enregistré, toujours avec Clément Lemêtre, dans la chapelle de La Jarjatte à
-                Lus-La-Croix-Haute, en mai 2023 dans la Drôme. Terra Mare est membre & soutenu par le collectif Les
-                Mineureuses en Savoie.
-            </p>
-            <div className="max-w-full flex justify-center mt-20">
-                <iframe style={{border: 0, width: "350px", height: "350px"}}
-                        src="https://bandcamp.com/EmbeddedPlayer/album=534948509/size=large/bgcol=ffffff/linkcol=333333/minimal=true/transparent=true/"
-                        seamless><a href="https://terramare.bandcamp.com/album/liuervehc">Terra Mare by paolo
-                    gauthier</a></iframe>
+
+            <div className="flex flex-wrap justify-evenly items-center mt-16 mb-16">
+                <p className="flex flex-col p-5 text-xl" style={{maxWidth: "500px"}}>
+                    <span><span className="font-bold">Paolo Gauthier</span> // voix, poème, musique, guitare-cithare et violon  </span>
+                    <span><span className="font-bold">Yurie Hu</span> // violon</span>
+                    <span><span className="font-bold">Maëlle Le Gall</span> // violoncelle</span>
+                    <span><span className="font-bold">Marion Ruault</span> // contrebasse</span>
+                </p>
+                <div className="max-w-full">
+                    <img className="image-clip-3" style={{width: "500px"}} src="images/terra_mare3.webp"
+                         alt="Photo de groupe - Terra Mare"/>
+                </div>
             </div>
+
+            <p className="text-center mb-8 pl-4 pr-4 text-xl">
+                Contacts : <a className="font-bold" href="mailto:quatuorterramare@gmail.com">quatuorterramare@gmail.com</a>
+                <br/>
+                Youtube : <a className="font-bold" rel="noreferrer" target="_blank" href="https://youtube.com/@quatuorterramare" >@quatuorterramare</a>
+            </p>
+
 
         </ProjectLayoutComponent>
     </>
