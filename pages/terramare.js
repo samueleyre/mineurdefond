@@ -41,7 +41,7 @@ export default function Terramare() {
             </div>
 
             <p className="text-center mb-8 pl-4 pr-4 text-xl">
-                Contacts : <a className="font-bold" href="mailto:quatuorterramare@gmail.com">quatuorterramare@gmail.com</a>
+                Contacts : <a className="font-bold" href="mailto:quatuorterramare@gmail.com">quatuorterramare@gmail.com</a>, <a className="font-bold" href="mailto:gauthier.paolo@gmail.com">gauthier.paolo@gmail.com</a>
                 <br/>
                 Youtube : <a className="font-bold" rel="noreferrer" target="_blank" href="https://youtube.com/@quatuorterramare" >@quatuorterramare</a>
             </p>
