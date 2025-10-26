@@ -4,7 +4,7 @@ import ProjectLayoutComponent from "../components/project/project-layout.compone
 
 export default function Terramare() {
     return <>
-        <ProjectRockComponent title="Terra Mare" description="Folk des Alpes — Paolo Gauthier — Guitare-cithare, chant, tambour, poèmes & musique"/>
+        <ProjectRockComponent title="Terra Mare" description="Folk Indie Française"/>
         <ProjectLayoutComponent>
             <p className="text-xl md:w-10/12 text-center m-auto mb-10">
                 <b>Terra Mare</b> raconte le départ, les retrouvailles, les montagnes, la mer et la mémoire des migrations.
@@ -34,14 +34,10 @@ export default function Terramare() {
                     <span><span className="font-bold">Maëlle Le Gall</span> // violoncelle</span>
                     <span><span className="font-bold">Marion Ruault</span> // contrebasse</span>
                 </p>
-                <div className="max-w-full">
-                    <img className="image-clip-3" style={{width: "500px"}} src="images/terra_mare3.webp"
-                         alt="Photo de groupe - Terra Mare"/>
-                </div>
             </div>
 
             <p className="text-center mb-8 pl-4 pr-4 text-xl">
-                Contacts : <a className="font-bold" href="mailto:quatuorterramare@gmail.com">quatuorterramare@gmail.com</a>, <a className="font-bold" href="mailto:gauthier.paolo@gmail.com">gauthier.paolo@gmail.com</a>
+                Contact : <a className="font-bold" href="mailto:quatuorterramare@gmail.com">quatuorterramare@gmail.com</a>
                 <br/>
                 Youtube : <a className="font-bold" rel="noreferrer" target="_blank" href="https://youtube.com/@quatuorterramare" >@quatuorterramare</a>
             </p>
