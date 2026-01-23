@@ -15,12 +15,11 @@ function Contact() {
             <div className=" mobile:p-2 max-w-screen-lg m-auto">
                 <h1 className="text-6xl text-center white">CONTACT</h1>
                 <div style={{height: "220px"}} className="md:pt-20 mobile:pt-10 flex justify-evenly items-center flex-col">
-                    <a className="white text-xl md:text-6xl" target="_blank" rel="noreferrer" href="mailto:c.mineursdefond[at]gmail.com">c.mineursdefond
-                        [at] gmail.com</a>
+                    <a className="white text-xl md:text-6xl" target="_blank" rel="noreferrer" href="mailto:contact@lesmineureuses.fr">contact[at] lesmineureuses.fr</a>
                     <div className="md:pt-5 flex justify-center items-center">
-                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/C.MineursDeFond"><FontAwesomeIcon className="p-2 white w-16"
+                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/C.LesMineureuses"><FontAwesomeIcon className="p-2 white w-16"
                                                                                             icon={faFacebook}/></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mineurs_de_fond/"><FontAwesomeIcon className="p-2 white w-16"
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/les_mineureuses/"><FontAwesomeIcon className="p-2 white w-16"
                                                                                               icon={faInstagram}/></a>
                     </div>
                 </div>

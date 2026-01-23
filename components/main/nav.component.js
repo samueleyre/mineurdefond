@@ -97,10 +97,10 @@ export default function NavComponent({mode, sm_mode, position, mobile_only = fal
             name: "Zozio",
             link: '/zozio'
         },
-        {
-            name: "Thibault Gomez Quintet",
-            link: '/thibaultgomezquintet'
-        },
+        // {
+        //     name: "Thibault Gomez Quintet",
+        //     link: '/thibaultgomezquintet'
+        // },
         {
             name: "Terra Mare",
             link: '/terramare'

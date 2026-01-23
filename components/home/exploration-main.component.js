@@ -78,7 +78,6 @@ export default function ExplorationComponent() {
         ["KLANG", "klang"],
         ["KOLM", "kolm"],
         ["Tchoukadane", "tchoukadane"],
-        ["Thibault Gomez Quintet", "thibaultgomezquintet"],
         ["Zozio", "zozio"],
         ["Terra Mare", "terramare"],
         ["Madam RamDam", "madamramdam"],
